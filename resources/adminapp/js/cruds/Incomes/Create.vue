@@ -126,19 +126,19 @@
                       @blur="clearFocus"
                     />
                   </div>
-                  <div class="form-group form-check">
-                    <label class="form-check-label"
-                      ><input
-                        class="form-check-input"
-                        type="checkbox"
-                        :value="entry.approved"
-                        :checked="entry.approved"
-                        @change="updateApproved"
-                      /><span class="form-check-sign"
-                        ><span class="check"></span></span
-                      >{{ $t('cruds.income.fields.approved') }}</label
-                    >
-                  </div>
+<!--                  <div class="form-group form-check">-->
+<!--                    <label class="form-check-label"-->
+<!--                      ><input-->
+<!--                        class="form-check-input"-->
+<!--                        type="checkbox"-->
+<!--                        :value="entry.approved"-->
+<!--                        :checked="entry.approved"-->
+<!--                        @change="updateApproved"-->
+<!--                      /><span class="form-check-sign"-->
+<!--                        ><span class="check"></span></span-->
+<!--                      >{{ $t('cruds.income.fields.approved') }}</label-->
+<!--                    >-->
+<!--                  </div>-->
                   <div class="form-group">
                     <label class="required">{{
                       $t('cruds.income.fields.document')

@@ -119,4 +119,13 @@ class IncomeApiController extends Controller
 
         return response()->json($media, ResponseAlias::HTTP_CREATED);
     }
+
+    public function approve(Request $request, Income $income): JsonResponse
+    {
+        $income->update(['approved' => true]);
+
+        return (new IncomeResource($income))
+            ->response()
+            ->setStatusCode(ResponseAlias::HTTP_ACCEPTED);
+    }
 }

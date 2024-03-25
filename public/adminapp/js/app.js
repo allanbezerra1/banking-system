@@ -43,7 +43,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "adminapp/js/chunks/" + ({}[chunkId]||chunkId) + ".js?id=" + {"0":"30994cee94524a959589","1":"5d04165e6dfa06ad203d","2":"9d251c68d36d8ed3f11c","3":"410d00e047f9472220f6","4":"02c6e815e0de5b7edd5e","5":"3e92cbf825b1ddbe32a4","6":"637445289e2883e71927","7":"bbc48340244270b1c9d9","8":"5791513dcd3ff8a4c646","9":"554ab00a9b0ad0221a38","10":"0bafbc5e7aebaf40d210","11":"5138ac57f0d1f4480791","12":"e1362a0375ab6e24e8eb","13":"e6d276ea20a1cf99f23e","14":"038380743364468a9fd3","15":"ff3e49acadb1553e7609","16":"edb6bc749a17a89ded83","17":"431550e3f38a22693b28","18":"dfcc3ce9cbca2f187bf3","19":"537da99d8302a7ecd884","20":"794ace6dbd4db731eb70","21":"73a2bf00b5713deb529b","22":"26f7ca681ec17ca74df6","23":"a1356309af47dce72554","24":"365a5a09945431c61eeb","25":"edf0e5d7de2a4ad2ad6c","26":"9532e6f38d1567ccb3e7","27":"ec2c735674ddf5664156","28":"ec29c72ab1b76f895c69","29":"21790509e0efdd28ee60","30":"7545fd019d8b8e509737","31":"8a9aa22d4c38f36d5965","32":"3fbaef33a56c91eaaafa","33":"57779cd7fc08c1269539","34":"12a2c6f8cb2a1c476d10","35":"1fb3c265fc1eedbb2e01"}[chunkId] + ""
+/******/ 		return __webpack_require__.p + "adminapp/js/chunks/" + ({}[chunkId]||chunkId) + ".js?id=" + {"0":"2ef6475b19026cd6bac8","1":"e7d2956429684177c7c0","2":"415ebec4c2c9c17f5c77","3":"410d00e047f9472220f6","4":"02c6e815e0de5b7edd5e","5":"c82bfe46cbbdedd97f80","6":"c7dad1044416935abba7","7":"10378eb9f8e059676b87","8":"a3d3ffde976b767d7129","9":"d890420c5ad9c4824bd6","10":"27ded7031f8c47704928","11":"cbaf5287ec7e9c651e68","12":"2c84c0585bd1b93b718b","13":"3022473705d18502eb70","14":"7767bad180334f14a2e2","15":"6ee3fd88b001b6b521cd","16":"54ebfc6577a45189885b","17":"505d420577bfea9d9f73","18":"bdda78518b99a26ffd6d","19":"c36f54fc0ce75db5bda6","20":"a85a90046c4254c9a339","21":"4ad237619ed0ff97559f","22":"cebb9f2e6ec19e50955e","23":"ca8cab3c8023f04044ed","24":"ae09ca67b880c1f5284c","25":"c4cc7fced83b848555dc","26":"4ad24269f155187472ea","27":"9606445c2c4ff58a47eb","28":"f1cd431eb4e67956563b","29":"2aae58eedffed74d6c17","30":"6eb75860b56339ba6173","31":"c0f2c64b735d8ac584e6","32":"aa51c3e728a323b40099","33":"2092bd263abc999e852d","34":"4ec3d4baee5e07d8bb88","35":"01ae3777569281d2ce79"}[chunkId] + ""
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -205,27 +205,26 @@
 /*!*******************************************************!*\
   !*** ./node_modules/@casl/ability/dist/es5m/index.js ***!
   \*******************************************************/
-/*! exports provided: Ability, AbilityBuilder, ForbiddenError, PureAbility, buildMongoQueryMatcher, createAliasResolver, defineAbility, detectSubjectType, fieldPatternMatcher, getDefaultErrorMessage, hkt, mongoQueryMatcher, subject, wrapArray */
+/*! exports provided: Ability, AbilityBuilder, ForbiddenError, PureAbility, buildMongoQueryMatcher, createAliasResolver, defineAbility, detectSubjectType, fieldPatternMatcher, getDefaultErrorMessage, mongoQueryMatcher, subject, wrapArray */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Ability", function() { return gt; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AbilityBuilder", function() { return At; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ForbiddenError", function() { return mt; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PureAbility", function() { return ot; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "buildMongoQueryMatcher", function() { return at; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createAliasResolver", function() { return K; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "defineAbility", function() { return defineAbility; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "detectSubjectType", function() { return L; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fieldPatternMatcher", function() { return wt; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getDefaultErrorMessage", function() { return $t; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "hkt", function() { return Mt; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mongoQueryMatcher", function() { return ct; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "subject", function() { return z; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "wrapArray", function() { return T; });
-/* harmony import */ var _ucast_mongo2js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @ucast/mongo2js */ "./node_modules/@ucast/mongo2js/dist/es5m/index.js");
-function _(t,r){for(var i=0;i<r.length;i++){var n=r[i];n.enumerable=n.enumerable||false;n.configurable=true;if("value"in n)n.writable=true;Object.defineProperty(t,n.key,n)}}function P(t,r,i){if(r)_(t.prototype,r);if(i)_(t,i);return t}function R(){R=Object.assign||function(t){for(var r=1;r<arguments.length;r++){var i=arguments[r];for(var n in i)if(Object.prototype.hasOwnProperty.call(i,n))t[n]=i[n]}return t};return R.apply(this,arguments)}function k(t,r){t.prototype=Object.create(r.prototype);t.prototype.constructor=t;B(t,r)}function B(t,r){B=Object.setPrototypeOf||function t(r,i){r.__proto__=i;return r};return B(t,r)}function C(t){if(void 0===t)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return t}function T(t){return Array.isArray(t)?t:[t]}var q="__caslSubjectType__";function z(t,r){if(r)if(!r.hasOwnProperty(q))Object.defineProperty(r,q,{value:t});else if(t!==r[q])throw new Error("Trying to cast object to subject type "+t+" but previously it was casted to "+r[q]);return r}var S=function t(r){var i=typeof r;return"string"===i||"function"===i};var Y=function t(r){return r.modelName||r.name};var D=function t(r){return"string"===typeof r?r:Y(r)};function L(t){if(t.hasOwnProperty(q))return t[q];return Y(t.constructor)}function G(t,r,i){var n=T(r);var e=0;while(e<n.length){var u=n[e++];if(t.hasOwnProperty(u))n=i(n,t[u])}return n}function H(t,r){if("string"===typeof r&&-1!==t.indexOf(r))return r;for(var i=0;i<r.length;i++)if(-1!==t.indexOf(r[i]))return r[i];return null}var I=function t(r,i){return r.concat(i)};function J(t,r){if(r in t)throw new Error('Cannot use "'+r+"\" as an alias because it's reserved action.");var i=Object.keys(t);var n=function t(i,n){var e=H(i,n);if(e)throw new Error("Detected cycle "+e+" -> "+i.join(", "));var u="string"===typeof n&&n===r||-1!==i.indexOf(r)||Array.isArray(n)&&-1!==n.indexOf(r);if(u)throw new Error('Cannot make an alias to "'+r+'" because this is reserved action');return i.concat(n)};for(var e=0;e<i.length;e++)G(t,i[e],n)}function K(t,r){if(!r||false!==r.skipValidate)J(t,r&&r.anyAction||"manage");return function(r){return G(t,r,I)}}function N(t,r,i){for(var n=i;n<r.length;n++)t.push(r[n])}function Q(t,r){if(!t||!t.length)return r||[];if(!r||!r.length)return t||[];var i=0;var n=0;var e=[];while(i<t.length&&n<r.length)if(t[i].priority<r[n].priority){e.push(t[i]);i++}else{e.push(r[n]);n++}N(e,t,i);N(e,r,n);return e}function U(t,r,i){var n=t.get(r);if(!n){n=i();t.set(r,n)}return n}var V=function t(r){return r};function W(t,r){if(Array.isArray(t.fields)&&!t.fields.length)throw new Error("`rawRule.fields` cannot be an empty array. https://bit.ly/390miLa");if(t.fields&&!r.fieldMatcher)throw new Error('You need to pass "fieldMatcher" option in order to restrict access by fields');if(t.conditions&&!r.conditionsMatcher)throw new Error('You need to pass "conditionsMatcher" option in order to restrict access by conditions')}var X=function(){function t(t,r,i){if(void 0===i)i=0;W(t,r);this.action=r.resolveAction(t.action);this.subject=t.subject;this.inverted=!!t.inverted;this.conditions=t.conditions;this.reason=t.reason;this.fields=t.fields?T(t.fields):void 0;this.priority=i;this.t=r}var r=t.prototype;r.i=function t(){if(this.conditions&&!this.u)this.u=this.t.conditionsMatcher(this.conditions);return this.u};r.matchesConditions=function t(r){if(!this.conditions)return true;if(!r||S(r))return!this.inverted;var i=this.i();return i(r)};r.matchesField=function t(r){if(!this.fields)return true;if(!r)return!this.inverted;if(this.fields&&!this.o)this.o=this.t.fieldMatcher(this.fields);return this.o(r)};P(t,[{key:"ast",get:function t(){var r=this.i();return r?r.ast:void 0}}]);return t}();function Z(t,r){var i={value:t,prev:r,next:null};if(r)r.next=i;return i}function tt(t){if(t.next)t.next.prev=t.prev;if(t.prev)t.prev.next=t.next;t.next=t.prev=null}var rt=function t(r){return{value:r.value,prev:r.prev,next:r.next}};var it=function t(){return{rules:[],merged:false}};var nt=function t(){return new Map};var et=function t(r,i){if(!r.h&&i.fields)r.h=true};var ut=function(){function t(t,r){if(void 0===t)t=[];if(void 0===r)r={};this.h=false;this.v=new Map;this.l={conditionsMatcher:r.conditionsMatcher,fieldMatcher:r.fieldMatcher,resolveAction:r.resolveAction||V};this.p=r.anyAction||"manage";this.g=r.anySubjectType||"all";this.A=r.detectSubjectType||L;this.$=t;this.j=this.m(t)}var r=t.prototype;r.detectSubjectType=function t(r){if(S(r))return r;if(!r)return this.g;return this.A(r)};r.update=function t(r){var i={rules:r,ability:this,target:this};this.M("update",i);this.$=r;this.j=this.m(r);this.M("updated",i);return this};r.m=function t(r){var i=new Map;for(var n=r.length-1;n>=0;n--){var e=r.length-n-1;var u=new X(r[n],this.l,e);var o=T(u.action);var s=T(u.subject||this.g);et(this,u);for(var f=0;f<s.length;f++){var a=U(i,s[f],nt);for(var c=0;c<o.length;c++)U(a,o[c],it).rules.push(u)}}return i};r.possibleRulesFor=function t(r,i){if(void 0===i)i=this.g;if(!S(i))throw new Error('"possibleRulesFor" accepts only subject types (i.e., string or class) as the 2nd parameter');var n=U(this.j,i,nt);var e=U(n,r,it);if(e.merged)return e.rules;var u=r!==this.p&&n.has(this.p)?n.get(this.p).rules:void 0;var o=Q(e.rules,u);if(i!==this.g)o=Q(o,this.possibleRulesFor(r,this.g));e.rules=o;e.merged=true;return o};r.rulesFor=function t(r,i,n){var e=this.possibleRulesFor(r,i);if(n&&"string"!==typeof n)throw new Error("The 3rd, `field` parameter is expected to be a string. See https://stalniy.github.io/casl/en/api/casl-ability#can-of-pure-ability for details");if(!this.h)return e;return e.filter((function(t){return t.matchesField(n)}))};r.on=function t(r,i){var n=this;var e=this.v.get(r)||null;var u=Z(i,e);this.v.set(r,u);return function(){var t=n.v.get(r);if(!u.next&&!u.prev&&t===u)n.v.delete(r);else if(u===t)n.v.set(r,u.prev);tt(u)}};r.M=function t(r,i){var n=this.v.get(r)||null;while(null!==n){var e=n.prev?rt(n.prev):null;n.value(i);n=e}};P(t,[{key:"rules",get:function t(){return this.$}}]);return t}();var ot=function(t){k(PureAbility,t);function PureAbility(){return t.apply(this,arguments)||this}var r=PureAbility.prototype;r.can=function t(){var r=this.relevantRuleFor.apply(this,arguments);return!!r&&!r.inverted};r.relevantRuleFor=function t(r,i,n){var e=this.detectSubjectType(i);var u=this.rulesFor(r,e,n);for(var o=0,s=u.length;o<s;o++)if(u[o].matchesConditions(i))return u[o];return null};r.cannot=function t(){return!this.can.apply(this,arguments)};return PureAbility}(ut);var st={$eq:_ucast_mongo2js__WEBPACK_IMPORTED_MODULE_0__["$eq"],$ne:_ucast_mongo2js__WEBPACK_IMPORTED_MODULE_0__["$ne"],$lt:_ucast_mongo2js__WEBPACK_IMPORTED_MODULE_0__["$lt"],$lte:_ucast_mongo2js__WEBPACK_IMPORTED_MODULE_0__["$lte"],$gt:_ucast_mongo2js__WEBPACK_IMPORTED_MODULE_0__["$gt"],$gte:_ucast_mongo2js__WEBPACK_IMPORTED_MODULE_0__["$gte"],$in:_ucast_mongo2js__WEBPACK_IMPORTED_MODULE_0__["$in"],$nin:_ucast_mongo2js__WEBPACK_IMPORTED_MODULE_0__["$nin"],$all:_ucast_mongo2js__WEBPACK_IMPORTED_MODULE_0__["$all"],$size:_ucast_mongo2js__WEBPACK_IMPORTED_MODULE_0__["$size"],$regex:_ucast_mongo2js__WEBPACK_IMPORTED_MODULE_0__["$regex"],$options:_ucast_mongo2js__WEBPACK_IMPORTED_MODULE_0__["$options"],$elemMatch:_ucast_mongo2js__WEBPACK_IMPORTED_MODULE_0__["$elemMatch"],$exists:_ucast_mongo2js__WEBPACK_IMPORTED_MODULE_0__["$exists"]};var ft={eq:_ucast_mongo2js__WEBPACK_IMPORTED_MODULE_0__["eq"],ne:_ucast_mongo2js__WEBPACK_IMPORTED_MODULE_0__["ne"],lt:_ucast_mongo2js__WEBPACK_IMPORTED_MODULE_0__["lt"],lte:_ucast_mongo2js__WEBPACK_IMPORTED_MODULE_0__["lte"],gt:_ucast_mongo2js__WEBPACK_IMPORTED_MODULE_0__["gt"],gte:_ucast_mongo2js__WEBPACK_IMPORTED_MODULE_0__["gte"],in:_ucast_mongo2js__WEBPACK_IMPORTED_MODULE_0__["within"],nin:_ucast_mongo2js__WEBPACK_IMPORTED_MODULE_0__["nin"],all:_ucast_mongo2js__WEBPACK_IMPORTED_MODULE_0__["all"],size:_ucast_mongo2js__WEBPACK_IMPORTED_MODULE_0__["size"],regex:_ucast_mongo2js__WEBPACK_IMPORTED_MODULE_0__["regex"],elemMatch:_ucast_mongo2js__WEBPACK_IMPORTED_MODULE_0__["elemMatch"],exists:_ucast_mongo2js__WEBPACK_IMPORTED_MODULE_0__["exists"],and:_ucast_mongo2js__WEBPACK_IMPORTED_MODULE_0__["and"]};var at=function r(i,n,e){return Object(_ucast_mongo2js__WEBPACK_IMPORTED_MODULE_0__["createFactory"])(R({},st,i),R({},ft,n),e)};var ct=Object(_ucast_mongo2js__WEBPACK_IMPORTED_MODULE_0__["createFactory"])(st,ft);var ht=/[-/\\^$+?.()|[\]{}]/g;var vt=/\.?\*+\.?/g;var lt=/\*+/;var dt=/\./g;function bt(t,r,i){var n="*"===i[0]||"."===t[0]&&"."===t[t.length-1]?"+":"*";var e=-1===t.indexOf("**")?"[^.]":".";var u=t.replace(dt,"\\$&").replace(lt,e+n);return r+t.length===i.length?"(?:"+u+")?":u}function yt(t,r,i){if("."===t&&("*"===i[r-1]||"*"===i[r+1]))return t;return"\\"+t}function pt(t){var r=t.map((function(t){return t.replace(ht,yt).replace(vt,bt)}));var i=r.length>1?"(?:"+r.join("|")+")":r[0];return new RegExp("^"+i+"$")}var wt=function t(r){var i;return function(t){if("undefined"===typeof i)i=r.every((function(t){return-1===t.indexOf("*")}))?null:pt(r);return null===i?-1!==r.indexOf(t):i.test(t)}};var gt=function(t){k(Ability,t);function Ability(r,i){if(void 0===r)r=[];if(void 0===i)i={};return t.call(this,r,R({conditionsMatcher:ct,fieldMatcher:wt},i))||this}return Ability}(ot);var Et=function(){function t(t){this.O=t}var r=t.prototype;r.because=function t(r){this.O.reason=r;return this};return t}();var At=function(){function AbilityBuilder(t){this.rules=[];this.F=t;this.can=this.can.bind(this);this.cannot=this.cannot.bind(this);this.build=this.build.bind(this)}var t=AbilityBuilder.prototype;t.can=function t(r,i,n,e){var u={action:r};if(i){u.subject=i;if(Array.isArray(n)||"string"===typeof n)u.fields=n;else if("undefined"!==typeof n)u.conditions=n;if("undefined"!==typeof e)u.conditions=e}this.rules.push(u);return new Et(u)};t.cannot=function t(r,i,n,e){var u=this.can(r,i,n,e);u.O.inverted=true;return u};t.build=function t(r){return new this.F(this.rules,r)};return AbilityBuilder}();function defineAbility(t,r){var i=new At(gt);var n=t(i.can,i.cannot);if(n&&"function"===typeof n.then)return n.then((function(){return i.build(r)}));return i.build(r)}var $t=function t(r){return'Cannot execute "'+r.action+'" on "'+r.subjectType+'"'};var jt=function t(r){this.message=r};jt.prototype=Object.create(Error.prototype);var mt=function(t){k(ForbiddenError,t);ForbiddenError.setDefaultMessage=function t(r){this._="string"===typeof r?function(){return r}:r};ForbiddenError.from=function t(r){return new this(r)};function ForbiddenError(r){var i;i=t.call(this,"")||this;i.ability=r;if("function"===typeof Error.captureStackTrace){i.name="ForbiddenError";Error.captureStackTrace(C(i),i.constructor)}return i}var r=ForbiddenError.prototype;r.setMessage=function t(r){this.message=r;return this};r.throwUnlessCan=function t(){var r;var i=(r=this.ability).relevantRuleFor.apply(r,arguments);if(i&&!i.inverted)return;this.action=arguments.length<=0?void 0:arguments[0];this.subject=arguments.length<=1?void 0:arguments[1];this.subjectType=D(this.ability.detectSubjectType(arguments.length<=1?void 0:arguments[1]));this.field=arguments.length<=2?void 0:arguments[2];var n=i?i.reason:"";this.message=this.message||n||this.constructor._(this);throw this};return ForbiddenError}(jt);mt._=$t;var Mt=Object.freeze({__proto__:null});
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Ability", function() { return q; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AbilityBuilder", function() { return B; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ForbiddenError", function() { return G; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PureAbility", function() { return E; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "buildMongoQueryMatcher", function() { return x; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createAliasResolver", function() { return O; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "defineAbility", function() { return D; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "detectSubjectType", function() { return g; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fieldPatternMatcher", function() { return F; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getDefaultErrorMessage", function() { return P; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mongoQueryMatcher", function() { return M; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "subject", function() { return w; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "wrapArray", function() { return p; });
+/* harmony import */ var sift__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! sift */ "./node_modules/sift/es5m/index.js");
+function d(){return(d=Object.assign||function(t){for(var i=1;i<arguments.length;i++){var n=arguments[i];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(t[r]=n[r])}return t}).apply(this,arguments)}function y(t,i){t.prototype=Object.create(i.prototype),t.prototype.constructor=t,t.__proto__=i}function p(t){return Array.isArray(t)?t:[t]}var b="__caslSubjectType__";function w(t,i){if(i)if(i.hasOwnProperty(b)){if(t!==i[b])throw new Error("Trying to cast object to subject type "+t+" but previously it was casted to "+i[b])}else Object.defineProperty(i,b,{value:t});return i}function g(t){if(!t)return"all";if("string"==typeof t)return t;if(t.hasOwnProperty(b))return t[b];var i="function"==typeof t?t:t.constructor;return i.modelName||i.name}var j=function(t){return t};function O(t){return true&&function(t){if(t.manage)throw new Error('Cannot add alias for "manage" action because it is reserved');Object.keys(t).forEach((function(i){if(i===t[i]||Array.isArray(t[i])&&(-1!==t[i].indexOf(i)||-1!==t[i].indexOf("manage")))throw new Error("Attempt to alias action to itself: "+i+" -> "+t[i])}))}(t),function(i){return function(t,i){for(var n=p(i),r=0;r<n.length;){var e=n[r++];t.hasOwnProperty(e)&&(n=n.concat(t[e]))}return n}(t,i)}}var $=function(){function t(t,i){this.t=void 0,this.i=void 0,this.action=i.resolveAction(t.actions||t.action),this.subject=t.subject,this.inverted=!!t.inverted,this.conditions=t.conditions,this.reason=t.reason,this.fields=t.fields&&0!==t.fields.length?p(t.fields):void 0,"actions"in t&&console.warn("Rule `actions` field is deprecated. Use `action` field instead"),this.conditions&&i.conditionsMatcher&&(this.t=i.conditionsMatcher(this.conditions)),this.fields&&i.fieldMatcher&&(this.i=i.fieldMatcher(this.fields))}var i=t.prototype;return i.matchesConditions=function(t){return!this.t||(t&&"string"!=typeof t&&"function"!=typeof t?this.t(t):!this.inverted)},i.matchesField=function(t){return!this.i||(t?this.i(t):!this.inverted)},t}(),m=function(){function t(t){this.o=void 0,this.s=!1,this.u=!1,this.o=t,this.h=this.h.bind(this)}var i=t.prototype;return i.h=function(t){var i=t.fields,n=t.inverted;this.o=this.o&&!!n,this.u||!Array.isArray(i)||i.length||(this.u=!0),!this.s&&i&&i.length&&(this.s=!0)},i.l=function(t){if(this.o&&console.warn("Make sure your ability has direct rules, not only inverted ones. Otherwise `ability.can` will always return `false`."),this.u&&console.warn("[error in next major version]: There are rules with `fields` property being an empty array. This results in the same as not passing fields at all. Make sure to remove empty array or pass fields."),this.s&&!t.fieldMatcher)throw new Error('Field level restrictions are ignored because "fieldMatcher" option is not specified. Did you unintentionally used PureAbility instead of Ability?')},t}(),E=function(t){function i(){return t.apply(this,arguments)||this}y(i,t);var n=i.prototype;return n.can=function(){var t=this.relevantRuleFor.apply(this,arguments);return!!t&&!t.inverted},n.relevantRuleFor=function(){for(var t=this.rulesFor.apply(this,arguments),i=arguments.length<=1?void 0:arguments[1],n=0;n<t.length;n++)if(t[n].matchesConditions(i))return t[n];return null},n.cannot=function(){return!this.can.apply(this,arguments)},i}(function(){function t(t,i){var n=this;void 0===t&&(t=[]),void 0===i&&(i={}),this.s=!1,this.v=Object.create(null),this.p=Object.create(null),this.g=Object.create(null),this.j=[],this.O={conditionsMatcher:i.conditionsMatcher,fieldMatcher:i.fieldMatcher,resolveAction:i.resolveAction||j},Object.defineProperty(this,"detectSubjectType",{value:i.detectSubjectType||i.subjectName||g}),Object.defineProperty(this,"rules",{get:function(){return n.j}}),this.update(t)}var i=t.prototype;return i.update=function(t){var i={rules:t,ability:this,target:this};this.$("update",i),this.v=Object.create(null);var n=new m(t.length>0),r=this.m(t,n.h);return n.l(this.O),this.g=r,this.j=t,this.s=n.s,this.$("updated",i),this},i.m=function(t,i){void 0===i&&(i=j);for(var n=Object.create(null),r=0;r<t.length;r++){i(t[r],r);for(var e=new $(t[r],this.O),o=t.length-r-1,s=p(e.action),u=p(e.subject),a=0;a<u.length;a++){var h=this.detectSubjectType(u[a]);n[h]=n[h]||Object.create(null);for(var c=0;c<s.length;c++){var f=s[c];n[h][f]=n[h][f]||Object.create(null),n[h][f][o]=e}}}return n},i.possibleRulesFor=function(){for(var t=arguments.length,i=new Array(t),n=0;n<t;n++)i[n]=arguments[n];var r=i[0],e=i[1],o=this.detectSubjectType(e),s=this.v,u=o+"_"+r;return s[u]||(s[u]=this.A(r,o)),s[u]},i.A=function(t,i){var n=this;return("all"===i?[i]:[i,"all"]).reduce((function(i,r){var e=n.g[r];return e?Object.assign(i,e[t],e.manage):i}),[]).filter(Boolean)},i.rulesFor=function(){for(var t=arguments.length,i=new Array(t),n=0;n<t;n++)i[n]=arguments[n];var r=i[0],e=i[1],o=i[2],s=this.possibleRulesFor(r,e);if(o&&"string"!=typeof o)throw new Error("The 3rd, `field` parameter is expected to be a string. See https://stalniy.github.io/casl/en/api/casl-ability#can-of-pure-ability for details");return this.s?s.filter((function(t){return t.matchesField(o)})):s},i.on=function(t,i){var n=this.p,r=!0;return n[t]||(n[t]=[]),n[t].push(i),function(){if(r){var e=n[t].indexOf(i);n[t].splice(e,1),r=!1}}},i.$=function(t,i){var n=this.p[t];n&&n.slice(0).forEach((function(t){return t(i)}))},t}()),A={$eq:sift__WEBPACK_IMPORTED_MODULE_0__["$eq"],$ne:sift__WEBPACK_IMPORTED_MODULE_0__["$ne"],$lt:sift__WEBPACK_IMPORTED_MODULE_0__["$lt"],$lte:sift__WEBPACK_IMPORTED_MODULE_0__["$lte"],$gt:sift__WEBPACK_IMPORTED_MODULE_0__["$gt"],$gte:sift__WEBPACK_IMPORTED_MODULE_0__["$gte"],$in:sift__WEBPACK_IMPORTED_MODULE_0__["$in"],$nin:sift__WEBPACK_IMPORTED_MODULE_0__["$nin"],$all:sift__WEBPACK_IMPORTED_MODULE_0__["$all"],$size:sift__WEBPACK_IMPORTED_MODULE_0__["$size"],$regex:sift__WEBPACK_IMPORTED_MODULE_0__["$regex"],$elemMatch:sift__WEBPACK_IMPORTED_MODULE_0__["$elemMatch"],$exists:sift__WEBPACK_IMPORTED_MODULE_0__["$exists"]};function x(i){var n={operations:d({},A,i)};return function(i){return Object(sift__WEBPACK_IMPORTED_MODULE_0__["createQueryTester"])(i,n)}}var M=x({}),T=/[-/\\^$+?.()|[\]{}]/g,_=/\.?\*+\.?/g,R=/\*+/,S=/\./g;function k(t,i,n){var r="*"===n[0]||"."===t[0]&&"."===t[t.length-1]?"+":"*",e=-1===t.indexOf("**")?"[^.]":".",o=t.replace(S,"\\$&").replace(R,e+r);return i+t.length===n.length?"(?:"+o+")?":o}function C(t,i,n){return"."!==t||"*"!==n[i-1]&&"*"!==n[i+1]?"\\"+t:t}var F=function(t){var i;return function(n){return void 0===i&&(i=t.every((function(t){return-1===t.indexOf("*")}))?null:function(t){var i=t.map((function(t){return t.replace(T,C).replace(_,k)})),n=i.length>1?"(?:"+i.join("|")+")":i[0];return new RegExp("^"+n+"$")}(t)),null===i?-1!==t.indexOf(n):i.test(n)}},q=function(t){function i(i,n){return t.call(this,i,d({conditionsMatcher:M,fieldMatcher:F},n))||this}return y(i,t),i}(E),z=function(){function t(t){this.rule=t}return t.prototype.because=function(t){return this.rule.reason=t,this},t}(),B=function(){function t(t){void 0===t&&(t=E),this.rules=[],this.M=t;this.can=this.can.bind(this),this.cannot=this.cannot.bind(this),this.build=this.build.bind(this)}var i=t.prototype;return i.can=function(t,i,n,r){var e={action:t};return i&&(e.subject=i,Array.isArray(n)||"string"==typeof n?e.fields=n:void 0!==n&&(e.conditions=n),void 0!==r&&(e.conditions=r)),this.rules.push(e),new z(e)},i.cannot=function(t,i,n,r){var e=this.can(t,i,n,r);return e.rule.inverted=!0,e},i.build=function(t){return new this.M(this.rules,t)},t}();function D(t,i){var n,r;if("function"==typeof t)r=t,n={};else{if("function"!=typeof i)throw new Error("`defineAbility` expects to receive either options and dsl function or only dsl function");n=t,r=i}var e=new B(q),o=r(e.can,e.cannot);return o&&"function"==typeof o.then?o.then((function(){return e.build(n)})):e.build(n)}var P=function(t){return'Cannot execute "'+t.action+'" on "'+t.subjectType+'"'},U=function(t){this.message=t};U.prototype=Object.create(Error.prototype);var G=function(t){function i(i){var n;return(n=t.call(this,"")||this).ability=void 0,n.field=void 0,n.ability=i,"function"==typeof Error.captureStackTrace&&(n.name="ForbiddenError",Error.captureStackTrace(function(t){if(void 0===t)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return t}(n),n.constructor)),n}y(i,t),i.setDefaultMessage=function(t){this.T="string"==typeof t?function(){return t}:t},i.from=function(t){return new this(t)};var n=i.prototype;return n.setMessage=function(t){return this.message=t,this},n.throwUnlessCan=function(){var t,i=(t=this.ability).relevantRuleFor.apply(t,arguments);if(!i||i.inverted){this.action=arguments.length<=0?void 0:arguments[0],this.subject=arguments.length<=1?void 0:arguments[1],this.subjectType=this.ability.detectSubjectType(arguments.length<=1?void 0:arguments[1]),this.field=arguments.length<=2?void 0:arguments[2];var n=i?i.reason:"";throw this.message=this.message||n||this.constructor.T(this),this}},i}(U);G.T=P;
 //# sourceMappingURL=index.js.map
 
 
@@ -1485,280 +1484,6 @@ if (typeof window !== 'undefined' && window.Vue) {
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (_index_vue__WEBPACK_IMPORTED_MODULE_0__["default"]);
-
-
-/***/ }),
-
-/***/ "./node_modules/@ucast/core/dist/es5m/index.js":
-/*!*****************************************************!*\
-  !*** ./node_modules/@ucast/core/dist/es5m/index.js ***!
-  \*****************************************************/
-/*! exports provided: CompoundCondition, Condition, DocumentCondition, FieldCondition, ITSELF, NULL_CONDITION, ObjectQueryParser, buildAnd, buildOr, createInterpreter, createTranslatorFactory, defaultInstructionParsers, hasOperators, identity, ignoreValue, isCompound, object, optimizedCompoundCondition, parseInstruction */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CompoundCondition", function() { return o; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Condition", function() { return i; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DocumentCondition", function() { return e; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FieldCondition", function() { return f; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ITSELF", function() { return u; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NULL_CONDITION", function() { return a; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ObjectQueryParser", function() { return _; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "buildAnd", function() { return y; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "buildOr", function() { return O; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createInterpreter", function() { return E; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createTranslatorFactory", function() { return x; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "defaultInstructionParsers", function() { return j; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "hasOperators", function() { return p; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "identity", function() { return v; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ignoreValue", function() { return l; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isCompound", function() { return s; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "object", function() { return d; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "optimizedCompoundCondition", function() { return h; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "parseInstruction", function() { return q; });
-function t(t,r){for(var n=0;n<r.length;n++){var i=r[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(t,i.key,i)}}function r(){return(r=Object.assign||function(t){for(var r=1;r<arguments.length;r++){var n=arguments[r];for(var i in n)Object.prototype.hasOwnProperty.call(n,i)&&(t[i]=n[i])}return t}).apply(this,arguments)}function n(t,r){t.prototype=Object.create(r.prototype),t.prototype.constructor=t,t.__proto__=r}var i=function(){function r(t,r){this.operator=t,this.value=r,Object.defineProperty(this,"t",{writable:!0})}var n,i,e;return r.prototype.addNote=function(t){this.t=this.t||[],this.t.push(t)},n=r,(i=[{key:"notes",get:function(){return this.t}}])&&t(n.prototype,i),e&&t(n,e),r}(),e=function(t){function r(){return t.apply(this,arguments)||this}return n(r,t),r}(i),o=function(t){function r(r,n){if(!Array.isArray(n))throw new Error('"'+r+'" operator expects to receive an array of conditions');return t.call(this,r,n)||this}return n(r,t),r}(e),u="__itself__",f=function(t){function r(r,n,i){var e;return(e=t.call(this,r,i)||this).field=n,e}return n(r,t),r}(i),a=new e("__null__",null),c=Object.prototype.hasOwnProperty.call.bind(Object.prototype.hasOwnProperty);function s(t,r){return r instanceof o&&r.operator===t}function h(t,r){return 1===r.length?r[0]:new o(t,function t(r,n,i){for(var e=i||[],o=0,u=n.length;o<u;o++){var f=n[o];s(r,f)?t(r,f.value,e):e.push(f)}return e}(t,r))}var v=function(t){return t},d=function(){return Object.create(null)},l=Object.defineProperty(d(),"__@type@__",{value:"ignore value"});function p(t,r,n){if(void 0===n&&(n=!1),!t||t&&t.constructor!==Object)return!1;for(var i in t){if(c(t,i)&&c(r,i)&&(!n||t[i]!==l))return!0}return!1}function w(t){var r=[];for(var n in t)c(t,n)&&t[n]!==l&&r.push(n);return r}function b(t,r){r!==a&&t.push(r)}var y=function(t){return h("and",t)},O=function(t){return h("or",t)},j={compound:function(t,r,n){var i=(Array.isArray(r)?r:[r]).map((function(t){return n.parse(t)}));return new o(t.name,i)},field:function(t,r,n){return new f(t.name,n.field,r)},document:function(t,r){return new e(t.name,r)}},_=function(){function t(t,n){var i=this;void 0===n&&(n=d()),this.i=void 0,this.o=void 0,this.u=void 0,this.s=void 0,this.h=void 0,this.parse=this.parse.bind(this),this.s={operatorToConditionName:n.operatorToConditionName||v,defaultOperatorName:n.defaultOperatorName||"eq",mergeFinalConditions:n.mergeFinalConditions||y},this.i=Object.keys(t).reduce((function(n,e){return n[e]=r({name:i.s.operatorToConditionName(e)},t[e]),n}),{}),this.o=r({},n.fieldContext,{field:"",query:{},parse:this.parse,hasOperators:function(t){return p(t,i.i,n.useIgnoreValue)}}),this.u=r({},n.documentContext,{parse:this.parse,query:{}}),this.h=n.useIgnoreValue?w:Object.keys}var n=t.prototype;return n.setParse=function(t){this.parse=t,this.o.parse=t,this.u.parse=t},n.parseField=function(t,r,n,i){var e=this.i[r];if(!e)throw new Error('Unsupported operator "'+r+'"');if("field"!==e.type)throw new Error("Unexpected "+e.type+' operator "'+r+'" at field level');return this.o.field=t,this.o.query=i,this.parseInstruction(e,n,this.o)},n.parseInstruction=function(t,r,n){return"function"==typeof t.validate&&t.validate(t,r),(t.parse||j[t.type])(t,r,n)},n.parseFieldOperators=function(t,r){for(var n=[],i=this.h(r),e=0,o=i.length;e<o;e++){var u=i[e];if(!this.i[u])throw new Error('Field query for "'+t+'" may contain only operators or a plain object as a value');b(n,this.parseField(t,u,r[u],r))}return n},n.parse=function(t){var r=[],n=this.h(t);this.u.query=t;for(var i=0,e=n.length;i<e;i++){var o=n[i],u=t[o],f=this.i[o];if(f){if("document"!==f.type&&"compound"!==f.type)throw new Error('Cannot use parsing instruction for operator "'+o+'" in "document" context as it is supposed to be used in  "'+f.type+'" context');b(r,this.parseInstruction(f,u,this.u))}else this.o.hasOperators(u)?r.push.apply(r,this.parseFieldOperators(o,u)):b(r,this.parseField(o,this.s.defaultOperatorName,u,t))}return this.s.mergeFinalConditions(r)},t}();function m(t,r){var n=t[r];if("function"!=typeof n)throw new Error('Unable to interpret "'+r+'" condition. Did you forget to register interpreter for it?');return n}function g(t){return t.operator}function E(t,n){var i,e=n,o=e&&e.getInterpreterName||g;switch(e?e.numberOfArguments:0){case 1:i=function(r){var n=o(r,e);return m(t,n)(r,u)};break;case 3:i=function(r,n,i){var f=o(r,e);return m(t,f)(r,n,i,u)};break;default:i=function(r,n){var i=o(r,e);return m(t,i)(r,n,u)}}var u=r({},e,{interpret:i});return u.interpret}function x(t,r){return function(n){for(var i=arguments.length,e=new Array(i>1?i-1:0),o=1;o<i;o++)e[o-1]=arguments[o];var u=t.apply(void 0,[n].concat(e)),f=r.bind(null,u);return f.ast=u,f}}var q=_.prototype.parseInstruction;
-//# sourceMappingURL=index.js.map
-
-
-/***/ }),
-
-/***/ "./node_modules/@ucast/js/dist/es5m/index.js":
-/*!***************************************************!*\
-  !*** ./node_modules/@ucast/js/dist/es5m/index.js ***!
-  \***************************************************/
-/*! exports provided: all, allInterpreters, and, compare, createGetter, createJsInterpreter, elemMatch, eq, exists, getObjectField, getObjectFieldCursor, gt, gte, interpret, lt, lte, mod, ne, nin, nor, not, or, regex, size, where, within */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "all", function() { return B; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "allInterpreters", function() { return S; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "and", function() { return d; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "compare", function() { return l; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createGetter", function() { return v; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createJsInterpreter", function() { return y; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "elemMatch", function() { return E; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "eq", function() { return p; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "exists", function() { return _; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getObjectField", function() { return a; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getObjectFieldCursor", function() { return c; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "gt", function() { return j; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "gte", function() { return w; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "interpret", function() { return U; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "lt", function() { return h; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "lte", function() { return s; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mod", function() { return x; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ne", function() { return A; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "nin", function() { return z; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "nor", function() { return m; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "not", function() { return g; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "or", function() { return b; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "regex", function() { return N; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "size", function() { return O; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "where", function() { return M; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "within", function() { return q; });
-/* harmony import */ var _ucast_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @ucast/core */ "./node_modules/@ucast/core/dist/es5m/index.js");
-function t(r,n,t){for(var u=0,e=r.length;u<e;u++)if(0===t(r[u],n))return!0;return!1}function u(r,n){return Array.isArray(r)&&Number.isNaN(Number(n))}function e(r,n,t){if(!u(r,n))return t(r,n);for(var e=[],o=0;o<r.length;o++){var i=t(r[o],n);void 0!==i&&(e=e.concat(i))}return e}function o(r){return function(n,t,u){var e=u.get(t,n.field);return Array.isArray(e)?e.some((function(t){return r(n,t,u)})):r(n,e,u)}}function i(){return(i=Object.assign||function(r){for(var n=1;n<arguments.length;n++){var t=arguments[n];for(var u in t)Object.prototype.hasOwnProperty.call(t,u)&&(r[u]=t[u])}return r}).apply(this,arguments)}var f=function(r,n){return r[n]};function c(r,n,t){var u=n.lastIndexOf(".");return-1===u?[r,n]:[t(r,n.slice(0,u)),n.slice(u+1)]}function a(n,t,u){if(void 0===u&&(u=f),t===_ucast_core__WEBPACK_IMPORTED_MODULE_0__["ITSELF"])return n;if(!n)throw new Error('Unable to get field "'+t+'" out of '+String(n)+".");return function(r,n,t){if(-1===n.indexOf("."))return e(r,n,t);for(var u=n.split("."),o=r,i=0,f=u.length;i<f;i++)if(!(o=e(o,u[i],t))||"object"!=typeof o)return o;return o}(n,t,u)}function v(r){return function(n,t){return a(n,t,r)}}function l(r,n){return r===n?0:r>n?1:-1}function y(r,t){return void 0===t&&(t={}),Object(_ucast_core__WEBPACK_IMPORTED_MODULE_0__["createInterpreter"])(r,i({get:a,compare:l},t))}var b=function(r,n,t){var u=t.interpret;return r.value.some((function(r){return u(r,n)}))},m=function(r,n,t){return!b(r,n,t)},d=function(r,n,t){var u=t.interpret;return r.value.every((function(r){return u(r,n)}))},g=function(r,n,t){return!(0,t.interpret)(r.value[0],n)},p=function(r,n,u){var e=u.compare,o=(0,u.get)(n,r.field);return Array.isArray(o)&&!Array.isArray(r.value)?t(o,r.value,e):0===e(o,r.value)},A=function(r,n,t){return!p(r,n,t)},s=o((function(r,n,t){var u=t.compare(n,r.value);return 0===u||-1===u})),h=o((function(r,n,t){return-1===t.compare(n,r.value)})),j=o((function(r,n,t){return 1===t.compare(n,r.value)})),w=o((function(r,n,t){var u=t.compare(n,r.value);return 0===u||1===u})),_=function(n,t,e){var o=e.get;if(n.field===_ucast_core__WEBPACK_IMPORTED_MODULE_0__["ITSELF"])return void 0!==t;var i=c(t,n.field,o),f=i[0],a=i[1],v=function(r){return null==r?Boolean(r)===n.value:r.hasOwnProperty(a)===n.value};return u(f,a)?f.some(v):v(f)},x=o((function(r,n){return"number"==typeof n&&n%r.value[0]===r.value[1]})),O=function(n,t,e){var o=e.get,i=c(t,n.field,o),f=i[0],a=i[1],v=function(r){var t=o(r,a);return Array.isArray(t)&&t.length===n.value};return n.field!==_ucast_core__WEBPACK_IMPORTED_MODULE_0__["ITSELF"]&&u(f,a)?f.some(v):v(f)},N=o((function(r,n){return"string"==typeof n&&r.value.test(n)})),q=o((function(r,n,u){var e=u.compare;return t(r.value,n,e)})),z=function(r,n,t){return!q(r,n,t)},B=function(r,n,u){var e=u.compare,o=(0,u.get)(n,r.field);return Array.isArray(o)&&r.value.every((function(r){return t(o,r,e)}))},E=function(r,n,t){var u=t.interpret,e=(0,t.get)(n,r.field);return Array.isArray(e)&&e.some((function(n){return u(r.value,n)}))},M=function(r,n){return r.value.call(n)},S=i({},Object.freeze({__proto__:null,or:b,nor:m,and:d,not:g,eq:p,ne:A,lte:s,lt:h,gt:j,gte:w,exists:_,mod:x,size:O,regex:N,within:q,nin:z,all:B,elemMatch:E,where:M}),{in:q}),U=y(S);
-//# sourceMappingURL=index.js.map
-
-
-/***/ }),
-
-/***/ "./node_modules/@ucast/mongo/dist/es5m/index.js":
-/*!******************************************************!*\
-  !*** ./node_modules/@ucast/mongo/dist/es5m/index.js ***!
-  \******************************************************/
-/*! exports provided: defaultParsers, $all, $and, $elemMatch, $eq, $exists, $gt, $gte, $in, $lt, $lte, $mod, $ne, $nin, $nor, $not, $options, $or, $regex, $size, $where, MongoQueryParser, allParsingInstructions */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "$all", function() { return x; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "$and", function() { return p; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "$elemMatch", function() { return v; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "$eq", function() { return O; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "$exists", function() { return m; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "$gt", function() { return b; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "$gte", function() { return g; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "$in", function() { return y; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "$lt", function() { return E; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "$lte", function() { return j; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "$mod", function() { return h; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "$ne", function() { return R; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "$nin", function() { return $; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "$nor", function() { return l; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "$not", function() { return d; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "$options", function() { return q; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "$or", function() { return s; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "$regex", function() { return _; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "$size", function() { return w; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "$where", function() { return A; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MongoQueryParser", function() { return P; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "allParsingInstructions", function() { return z; });
-/* harmony import */ var _ucast_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @ucast/core */ "./node_modules/@ucast/core/dist/es5m/index.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "defaultParsers", function() { return _ucast_core__WEBPACK_IMPORTED_MODULE_0__["defaultInstructionParsers"]; });
-
-function f(e,t){if(!Array.isArray(t))throw new Error('"'+e.name+'" expects value to be an array')}function u(e,t){if(f(e,t),!t.length)throw new Error('"'+e.name+'" expects to have at least one element in array')}var c=function(e){return function(t,r){if(typeof r!==e)throw new Error('"'+t.name+'" expects value to be a "'+e+'"')}},p={type:"compound",validate:u,parse:function(t,r,n){var o=n.parse,a=r.map((function(e){return o(e)}));return Object(_ucast_core__WEBPACK_IMPORTED_MODULE_0__["optimizedCompoundCondition"])(t.name,a)}},s=p,l={type:"compound",validate:u},d={type:"field",validate:function(e,t){if(!(t&&(t instanceof RegExp||t.constructor===Object)))throw new Error('"'+e.name+'" expects to receive either regular expression or object of field operators')},parse:function(e,n,o){var a=n instanceof RegExp?new _ucast_core__WEBPACK_IMPORTED_MODULE_0__["FieldCondition"]("regex",o.field,n):o.parse(n,o);return new _ucast_core__WEBPACK_IMPORTED_MODULE_0__["CompoundCondition"](e.name,[a])}},v={type:"field",validate:function(e,t){if(!t||t.constructor!==Object)throw new Error('"'+e.name+'" expects to receive an object with nested query or field level operators')},parse:function(e,r,o){var a=o.parse,i=o.field,f=(0,o.hasOperators)(r)?a(r,{field:_ucast_core__WEBPACK_IMPORTED_MODULE_0__["ITSELF"]}):a(r);return new _ucast_core__WEBPACK_IMPORTED_MODULE_0__["FieldCondition"](e.name,i,f)}},w={type:"field",validate:c("number")},y={type:"field",validate:f},$=y,x=y,h={type:"field",validate:function(e,t){if(!Array.isArray(t)||2!==t.length)throw new Error('"'+e.name+'" expects an array with 2 numeric elements')}},m={type:"field",validate:c("boolean")},g={type:"field",validate:function(e,t){if(!("string"==typeof t||"number"==typeof t||t instanceof Date))throw new Error('"'+e.name+'" expects value to be comparable (i.e., string, number or date)')}},b=g,E=b,j=b,O={type:"field"},R=O,_={type:"field",validate:function(e,t){if(!(t instanceof RegExp)&&"string"!=typeof t)throw new Error('"'+e.name+'" expects value to be a regular expression or a string that represents regular expression')},parse:function(e,r,n){var o="string"==typeof r?new RegExp(r,n.query.$options||""):r;return new _ucast_core__WEBPACK_IMPORTED_MODULE_0__["FieldCondition"](e.name,n.field,o)}},q={type:"field",parse:function(){return _ucast_core__WEBPACK_IMPORTED_MODULE_0__["NULL_CONDITION"]}},A={type:"document",validate:c("function")},N=Object.freeze({__proto__:null,$and:p,$or:s,$nor:l,$not:d,$elemMatch:v,$size:w,$in:y,$nin:$,$all:x,$mod:h,$exists:m,$gte:g,$gt:b,$lt:E,$lte:j,$eq:O,$ne:R,$regex:_,$options:q,$where:A});var P=function(e){var t,r;function n(t){return e.call(this,t,{defaultOperatorName:"$eq",operatorToConditionName:function(e){return e.slice(1)}})||this}return r=e,(t=n).prototype=Object.create(r.prototype),t.prototype.constructor=t,t.__proto__=r,n.prototype.parse=function(t,r){return r&&r.field?Object(_ucast_core__WEBPACK_IMPORTED_MODULE_0__["buildAnd"])(this.parseFieldOperators(r.field,t)):e.prototype.parse.call(this,t)},n}(_ucast_core__WEBPACK_IMPORTED_MODULE_0__["ObjectQueryParser"]),z=N;
-//# sourceMappingURL=index.js.map
-
-
-/***/ }),
-
-/***/ "./node_modules/@ucast/mongo2js/dist/es5m/index.js":
-/*!*********************************************************!*\
-  !*** ./node_modules/@ucast/mongo2js/dist/es5m/index.js ***!
-  \*********************************************************/
-/*! exports provided: CompoundCondition, Condition, DocumentCondition, FieldCondition, ITSELF, NULL_CONDITION, ObjectQueryParser, buildAnd, buildOr, createInterpreter, createTranslatorFactory, defaultInstructionParsers, hasOperators, identity, ignoreValue, isCompound, object, optimizedCompoundCondition, parseInstruction, defaultParsers, $all, $and, $elemMatch, $eq, $exists, $gt, $gte, $in, $lt, $lte, $mod, $ne, $nin, $nor, $not, $options, $or, $regex, $size, $where, MongoQueryParser, allParsingInstructions, all, allInterpreters, and, compare, createGetter, createJsInterpreter, elemMatch, eq, exists, getObjectField, getObjectFieldCursor, gt, gte, interpret, lt, lte, mod, ne, nin, nor, not, or, regex, size, where, within, createFactory, filter, guard, squire */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createFactory", function() { return p; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "filter", function() { return d; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guard", function() { return s; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "squire", function() { return v; });
-/* harmony import */ var _ucast_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @ucast/core */ "./node_modules/@ucast/core/dist/es5m/index.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "CompoundCondition", function() { return _ucast_core__WEBPACK_IMPORTED_MODULE_0__["CompoundCondition"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Condition", function() { return _ucast_core__WEBPACK_IMPORTED_MODULE_0__["Condition"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "DocumentCondition", function() { return _ucast_core__WEBPACK_IMPORTED_MODULE_0__["DocumentCondition"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "FieldCondition", function() { return _ucast_core__WEBPACK_IMPORTED_MODULE_0__["FieldCondition"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "ITSELF", function() { return _ucast_core__WEBPACK_IMPORTED_MODULE_0__["ITSELF"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NULL_CONDITION", function() { return _ucast_core__WEBPACK_IMPORTED_MODULE_0__["NULL_CONDITION"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "ObjectQueryParser", function() { return _ucast_core__WEBPACK_IMPORTED_MODULE_0__["ObjectQueryParser"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "buildAnd", function() { return _ucast_core__WEBPACK_IMPORTED_MODULE_0__["buildAnd"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "buildOr", function() { return _ucast_core__WEBPACK_IMPORTED_MODULE_0__["buildOr"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "createInterpreter", function() { return _ucast_core__WEBPACK_IMPORTED_MODULE_0__["createInterpreter"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "createTranslatorFactory", function() { return _ucast_core__WEBPACK_IMPORTED_MODULE_0__["createTranslatorFactory"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "defaultInstructionParsers", function() { return _ucast_core__WEBPACK_IMPORTED_MODULE_0__["defaultInstructionParsers"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "hasOperators", function() { return _ucast_core__WEBPACK_IMPORTED_MODULE_0__["hasOperators"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "identity", function() { return _ucast_core__WEBPACK_IMPORTED_MODULE_0__["identity"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "ignoreValue", function() { return _ucast_core__WEBPACK_IMPORTED_MODULE_0__["ignoreValue"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "isCompound", function() { return _ucast_core__WEBPACK_IMPORTED_MODULE_0__["isCompound"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "object", function() { return _ucast_core__WEBPACK_IMPORTED_MODULE_0__["object"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "optimizedCompoundCondition", function() { return _ucast_core__WEBPACK_IMPORTED_MODULE_0__["optimizedCompoundCondition"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "parseInstruction", function() { return _ucast_core__WEBPACK_IMPORTED_MODULE_0__["parseInstruction"]; });
-
-/* harmony import */ var _ucast_mongo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @ucast/mongo */ "./node_modules/@ucast/mongo/dist/es5m/index.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "defaultParsers", function() { return _ucast_mongo__WEBPACK_IMPORTED_MODULE_1__["defaultParsers"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "$all", function() { return _ucast_mongo__WEBPACK_IMPORTED_MODULE_1__["$all"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "$and", function() { return _ucast_mongo__WEBPACK_IMPORTED_MODULE_1__["$and"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "$elemMatch", function() { return _ucast_mongo__WEBPACK_IMPORTED_MODULE_1__["$elemMatch"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "$eq", function() { return _ucast_mongo__WEBPACK_IMPORTED_MODULE_1__["$eq"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "$exists", function() { return _ucast_mongo__WEBPACK_IMPORTED_MODULE_1__["$exists"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "$gt", function() { return _ucast_mongo__WEBPACK_IMPORTED_MODULE_1__["$gt"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "$gte", function() { return _ucast_mongo__WEBPACK_IMPORTED_MODULE_1__["$gte"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "$in", function() { return _ucast_mongo__WEBPACK_IMPORTED_MODULE_1__["$in"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "$lt", function() { return _ucast_mongo__WEBPACK_IMPORTED_MODULE_1__["$lt"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "$lte", function() { return _ucast_mongo__WEBPACK_IMPORTED_MODULE_1__["$lte"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "$mod", function() { return _ucast_mongo__WEBPACK_IMPORTED_MODULE_1__["$mod"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "$ne", function() { return _ucast_mongo__WEBPACK_IMPORTED_MODULE_1__["$ne"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "$nin", function() { return _ucast_mongo__WEBPACK_IMPORTED_MODULE_1__["$nin"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "$nor", function() { return _ucast_mongo__WEBPACK_IMPORTED_MODULE_1__["$nor"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "$not", function() { return _ucast_mongo__WEBPACK_IMPORTED_MODULE_1__["$not"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "$options", function() { return _ucast_mongo__WEBPACK_IMPORTED_MODULE_1__["$options"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "$or", function() { return _ucast_mongo__WEBPACK_IMPORTED_MODULE_1__["$or"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "$regex", function() { return _ucast_mongo__WEBPACK_IMPORTED_MODULE_1__["$regex"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "$size", function() { return _ucast_mongo__WEBPACK_IMPORTED_MODULE_1__["$size"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "$where", function() { return _ucast_mongo__WEBPACK_IMPORTED_MODULE_1__["$where"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "MongoQueryParser", function() { return _ucast_mongo__WEBPACK_IMPORTED_MODULE_1__["MongoQueryParser"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "allParsingInstructions", function() { return _ucast_mongo__WEBPACK_IMPORTED_MODULE_1__["allParsingInstructions"]; });
-
-/* harmony import */ var _ucast_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ucast/js */ "./node_modules/@ucast/js/dist/es5m/index.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "all", function() { return _ucast_js__WEBPACK_IMPORTED_MODULE_2__["all"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "allInterpreters", function() { return _ucast_js__WEBPACK_IMPORTED_MODULE_2__["allInterpreters"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "and", function() { return _ucast_js__WEBPACK_IMPORTED_MODULE_2__["and"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "compare", function() { return _ucast_js__WEBPACK_IMPORTED_MODULE_2__["compare"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "createGetter", function() { return _ucast_js__WEBPACK_IMPORTED_MODULE_2__["createGetter"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "createJsInterpreter", function() { return _ucast_js__WEBPACK_IMPORTED_MODULE_2__["createJsInterpreter"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "elemMatch", function() { return _ucast_js__WEBPACK_IMPORTED_MODULE_2__["elemMatch"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "eq", function() { return _ucast_js__WEBPACK_IMPORTED_MODULE_2__["eq"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "exists", function() { return _ucast_js__WEBPACK_IMPORTED_MODULE_2__["exists"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "getObjectField", function() { return _ucast_js__WEBPACK_IMPORTED_MODULE_2__["getObjectField"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "getObjectFieldCursor", function() { return _ucast_js__WEBPACK_IMPORTED_MODULE_2__["getObjectFieldCursor"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "gt", function() { return _ucast_js__WEBPACK_IMPORTED_MODULE_2__["gt"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "gte", function() { return _ucast_js__WEBPACK_IMPORTED_MODULE_2__["gte"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "interpret", function() { return _ucast_js__WEBPACK_IMPORTED_MODULE_2__["interpret"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "lt", function() { return _ucast_js__WEBPACK_IMPORTED_MODULE_2__["lt"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "lte", function() { return _ucast_js__WEBPACK_IMPORTED_MODULE_2__["lte"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "mod", function() { return _ucast_js__WEBPACK_IMPORTED_MODULE_2__["mod"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "ne", function() { return _ucast_js__WEBPACK_IMPORTED_MODULE_2__["ne"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "nin", function() { return _ucast_js__WEBPACK_IMPORTED_MODULE_2__["nin"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "nor", function() { return _ucast_js__WEBPACK_IMPORTED_MODULE_2__["nor"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "not", function() { return _ucast_js__WEBPACK_IMPORTED_MODULE_2__["not"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "or", function() { return _ucast_js__WEBPACK_IMPORTED_MODULE_2__["or"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "regex", function() { return _ucast_js__WEBPACK_IMPORTED_MODULE_2__["regex"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "size", function() { return _ucast_js__WEBPACK_IMPORTED_MODULE_2__["size"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "where", function() { return _ucast_js__WEBPACK_IMPORTED_MODULE_2__["where"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "within", function() { return _ucast_js__WEBPACK_IMPORTED_MODULE_2__["within"]; });
-
-function c(){return(c=Object.assign||function(r){for(var t=1;t<arguments.length;t++){var o=arguments[t];for(var n in o)Object.prototype.hasOwnProperty.call(o,n)&&(r[n]=o[n])}return r}).apply(this,arguments)}function a(r){return r instanceof Date?r.getTime():r&&"function"==typeof r.toJSON?r.toJSON():r}var m=function(r,t){return Object(_ucast_js__WEBPACK_IMPORTED_MODULE_2__["compare"])(a(r),a(t))};function p(n,e,i){var u=new _ucast_mongo__WEBPACK_IMPORTED_MODULE_1__["MongoQueryParser"](n),a=Object(_ucast_js__WEBPACK_IMPORTED_MODULE_2__["createJsInterpreter"])(e,c({compare:m},i));if(i&&i.forPrimitives){var p={field:_ucast_core__WEBPACK_IMPORTED_MODULE_0__["ITSELF"]},s=u.parse;u.setParse((function(r){return s(r,p)}))}return Object(_ucast_core__WEBPACK_IMPORTED_MODULE_0__["createTranslatorFactory"])(u.parse,a)}var s=p(_ucast_mongo__WEBPACK_IMPORTED_MODULE_1__["allParsingInstructions"],_ucast_js__WEBPACK_IMPORTED_MODULE_2__["allInterpreters"]),v=p(["$and","$or"].reduce((function(r,t){return r[t]=c({},r[t],{type:"field"}),r}),c({},_ucast_mongo__WEBPACK_IMPORTED_MODULE_1__["allParsingInstructions"],{$nor:c({},_ucast_mongo__WEBPACK_IMPORTED_MODULE_1__["allParsingInstructions"].$nor,{type:"field",parse:_ucast_mongo__WEBPACK_IMPORTED_MODULE_1__["defaultParsers"].compound})})),_ucast_js__WEBPACK_IMPORTED_MODULE_2__["allInterpreters"],{forPrimitives:!0}),d=s;
-//# sourceMappingURL=index.js.map
 
 
 /***/ }),
@@ -27707,6 +27432,702 @@ process.umask = function() { return 0; };
 }(typeof self === "undefined" ? typeof global === "undefined" ? this : global : self));
 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js"), __webpack_require__(/*! ./../process/browser.js */ "./node_modules/process/browser.js")))
+
+/***/ }),
+
+/***/ "./node_modules/sift/es5m/index.js":
+/*!*****************************************!*\
+  !*** ./node_modules/sift/es5m/index.js ***!
+  \*****************************************/
+/*! exports provided: default, $Size, $all, $and, $elemMatch, $eq, $exists, $gt, $gte, $in, $lt, $lte, $mod, $ne, $nin, $nor, $not, $options, $or, $regex, $size, $type, $where, EqualsOperation, createDefaultQueryOperation, createEqualsOperation, createOperationTester, createQueryOperation, createQueryTester */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(process) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "$Size", function() { return $Size; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "$all", function() { return $all; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "$and", function() { return $and; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "$elemMatch", function() { return $elemMatch; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "$eq", function() { return $eq; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "$exists", function() { return $exists; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "$gt", function() { return $gt; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "$gte", function() { return $gte; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "$in", function() { return $in; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "$lt", function() { return $lt; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "$lte", function() { return $lte; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "$mod", function() { return $mod; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "$ne", function() { return $ne; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "$nin", function() { return $nin; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "$nor", function() { return $nor; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "$not", function() { return $not; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "$options", function() { return $options; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "$or", function() { return $or; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "$regex", function() { return $regex; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "$size", function() { return $size; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "$type", function() { return $type; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "$where", function() { return $where; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EqualsOperation", function() { return EqualsOperation; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createDefaultQueryOperation", function() { return createDefaultQueryOperation; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createEqualsOperation", function() { return createEqualsOperation; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createOperationTester", function() { return createOperationTester; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createQueryOperation", function() { return createQueryOperation; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createQueryTester", function() { return createQueryTester; });
+/*! *****************************************************************************
+Copyright (c) Microsoft Corporation.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+***************************************************************************** */
+/* global Reflect, Promise */
+
+var extendStatics = function(d, b) {
+    extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+    return extendStatics(d, b);
+};
+
+function __extends(d, b) {
+    if (typeof b !== "function" && b !== null)
+        throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+    extendStatics(d, b);
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+}
+
+var typeChecker = function (type) {
+    var typeString = "[object " + type + "]";
+    return function (value) {
+        return getClassName(value) === typeString;
+    };
+};
+var getClassName = function (value) { return Object.prototype.toString.call(value); };
+var comparable = function (value) {
+    if (value instanceof Date) {
+        return value.getTime();
+    }
+    else if (isArray(value)) {
+        return value.map(comparable);
+    }
+    else if (value && typeof value.toJSON === "function") {
+        return value.toJSON();
+    }
+    return value;
+};
+var isArray = typeChecker("Array");
+var isObject = typeChecker("Object");
+var isFunction = typeChecker("Function");
+var isVanillaObject = function (value) {
+    return (value &&
+        (value.constructor === Object ||
+            value.constructor === Array ||
+            value.constructor.toString() === "function Object() { [native code] }" ||
+            value.constructor.toString() === "function Array() { [native code] }") &&
+        !value.toJSON);
+};
+var equals = function (a, b) {
+    if (a == null && a == b) {
+        return true;
+    }
+    if (a === b) {
+        return true;
+    }
+    if (Object.prototype.toString.call(a) !== Object.prototype.toString.call(b)) {
+        return false;
+    }
+    if (isArray(a)) {
+        if (a.length !== b.length) {
+            return false;
+        }
+        for (var i = 0, length_1 = a.length; i < length_1; i++) {
+            if (!equals(a[i], b[i]))
+                return false;
+        }
+        return true;
+    }
+    else if (isObject(a)) {
+        if (Object.keys(a).length !== Object.keys(b).length) {
+            return false;
+        }
+        for (var key in a) {
+            if (!equals(a[key], b[key]))
+                return false;
+        }
+        return true;
+    }
+    return false;
+};
+
+/**
+ * Walks through each value given the context - used for nested operations. E.g:
+ * { "person.address": { $eq: "blarg" }}
+ */
+var walkKeyPathValues = function (item, keyPath, next, depth, key, owner) {
+    var currentKey = keyPath[depth];
+    // if array, then try matching. Might fall through for cases like:
+    // { $eq: [1, 2, 3] }, [ 1, 2, 3 ].
+    if (isArray(item) && isNaN(Number(currentKey))) {
+        for (var i = 0, length_1 = item.length; i < length_1; i++) {
+            // if FALSE is returned, then terminate walker. For operations, this simply
+            // means that the search critera was met.
+            if (!walkKeyPathValues(item[i], keyPath, next, depth, i, item)) {
+                return false;
+            }
+        }
+    }
+    if (depth === keyPath.length || item == null) {
+        return next(item, key, owner);
+    }
+    return walkKeyPathValues(item[currentKey], keyPath, next, depth + 1, currentKey, item);
+};
+var BaseOperation = /** @class */ (function () {
+    function BaseOperation(params, owneryQuery, options) {
+        this.params = params;
+        this.owneryQuery = owneryQuery;
+        this.options = options;
+        this.init();
+    }
+    BaseOperation.prototype.init = function () { };
+    BaseOperation.prototype.reset = function () {
+        this.done = false;
+        this.keep = false;
+    };
+    return BaseOperation;
+}());
+var NamedBaseOperation = /** @class */ (function (_super) {
+    __extends(NamedBaseOperation, _super);
+    function NamedBaseOperation(params, owneryQuery, options, name) {
+        var _this = _super.call(this, params, owneryQuery, options) || this;
+        _this.name = name;
+        return _this;
+    }
+    return NamedBaseOperation;
+}(BaseOperation));
+var GroupOperation = /** @class */ (function (_super) {
+    __extends(GroupOperation, _super);
+    function GroupOperation(params, owneryQuery, options, children) {
+        var _this = _super.call(this, params, owneryQuery, options) || this;
+        _this.children = children;
+        return _this;
+    }
+    /**
+     */
+    GroupOperation.prototype.reset = function () {
+        this.keep = false;
+        this.done = false;
+        for (var i = 0, length_2 = this.children.length; i < length_2; i++) {
+            this.children[i].reset();
+        }
+    };
+    /**
+     */
+    GroupOperation.prototype.childrenNext = function (item, key, owner) {
+        var done = true;
+        var keep = true;
+        for (var i = 0, length_3 = this.children.length; i < length_3; i++) {
+            var childOperation = this.children[i];
+            childOperation.next(item, key, owner);
+            if (!childOperation.keep) {
+                keep = false;
+            }
+            if (childOperation.done) {
+                if (!childOperation.keep) {
+                    break;
+                }
+            }
+            else {
+                done = false;
+            }
+        }
+        this.done = done;
+        this.keep = keep;
+    };
+    return GroupOperation;
+}(BaseOperation));
+var NamedGroupOperation = /** @class */ (function (_super) {
+    __extends(NamedGroupOperation, _super);
+    function NamedGroupOperation(params, owneryQuery, options, children, name) {
+        var _this = _super.call(this, params, owneryQuery, options, children) || this;
+        _this.name = name;
+        return _this;
+    }
+    return NamedGroupOperation;
+}(GroupOperation));
+var QueryOperation = /** @class */ (function (_super) {
+    __extends(QueryOperation, _super);
+    function QueryOperation() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    /**
+     */
+    QueryOperation.prototype.next = function (item, key, parent) {
+        this.childrenNext(item, key, parent);
+    };
+    return QueryOperation;
+}(GroupOperation));
+var NestedOperation = /** @class */ (function (_super) {
+    __extends(NestedOperation, _super);
+    function NestedOperation(keyPath, params, owneryQuery, options, children) {
+        var _this = _super.call(this, params, owneryQuery, options, children) || this;
+        _this.keyPath = keyPath;
+        /**
+         */
+        _this._nextNestedValue = function (value, key, owner) {
+            _this.childrenNext(value, key, owner);
+            return !_this.done;
+        };
+        return _this;
+    }
+    /**
+     */
+    NestedOperation.prototype.next = function (item, key, parent) {
+        walkKeyPathValues(item, this.keyPath, this._nextNestedValue, 0, key, parent);
+    };
+    return NestedOperation;
+}(GroupOperation));
+var createTester = function (a, compare) {
+    if (a instanceof Function) {
+        return a;
+    }
+    if (a instanceof RegExp) {
+        return function (b) {
+            var result = typeof b === "string" && a.test(b);
+            a.lastIndex = 0;
+            return result;
+        };
+    }
+    var comparableA = comparable(a);
+    return function (b) { return compare(comparableA, comparable(b)); };
+};
+var EqualsOperation = /** @class */ (function (_super) {
+    __extends(EqualsOperation, _super);
+    function EqualsOperation() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    EqualsOperation.prototype.init = function () {
+        this._test = createTester(this.params, this.options.compare);
+    };
+    EqualsOperation.prototype.next = function (item, key, parent) {
+        if (!Array.isArray(parent) || parent.hasOwnProperty(key)) {
+            if (this._test(item, key, parent)) {
+                this.done = true;
+                this.keep = true;
+            }
+        }
+    };
+    return EqualsOperation;
+}(BaseOperation));
+var createEqualsOperation = function (params, owneryQuery, options) { return new EqualsOperation(params, owneryQuery, options); };
+var NopeOperation = /** @class */ (function (_super) {
+    __extends(NopeOperation, _super);
+    function NopeOperation() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    NopeOperation.prototype.next = function () {
+        this.done = true;
+        this.keep = false;
+    };
+    return NopeOperation;
+}(BaseOperation));
+var numericalOperationCreator = function (createNumericalOperation) { return function (params, owneryQuery, options, name) {
+    if (params == null) {
+        return new NopeOperation(params, owneryQuery, options);
+    }
+    return createNumericalOperation(params, owneryQuery, options, name);
+}; };
+var numericalOperation = function (createTester) {
+    return numericalOperationCreator(function (params, owneryQuery, options) {
+        var typeofParams = typeof comparable(params);
+        var test = createTester(params);
+        return new EqualsOperation(function (b) {
+            return typeof comparable(b) === typeofParams && test(b);
+        }, owneryQuery, options);
+    });
+};
+var createNamedOperation = function (name, params, parentQuery, options) {
+    var operationCreator = options.operations[name];
+    if (!operationCreator) {
+        throw new Error("Unsupported operation: " + name);
+    }
+    return operationCreator(params, parentQuery, options, name);
+};
+var containsOperation = function (query) {
+    for (var key in query) {
+        if (key.charAt(0) === "$")
+            return true;
+    }
+    return false;
+};
+var createNestedOperation = function (keyPath, nestedQuery, owneryQuery, options) {
+    if (containsOperation(nestedQuery)) {
+        var _a = createQueryOperations(nestedQuery, options), selfOperations = _a[0], nestedOperations = _a[1];
+        if (nestedOperations.length) {
+            throw new Error("Property queries must contain only operations, or exact objects.");
+        }
+        return new NestedOperation(keyPath, nestedQuery, owneryQuery, options, selfOperations);
+    }
+    return new NestedOperation(keyPath, nestedQuery, owneryQuery, options, [
+        new EqualsOperation(nestedQuery, owneryQuery, options)
+    ]);
+};
+var createQueryOperation = function (query, owneryQuery, _a) {
+    if (owneryQuery === void 0) { owneryQuery = null; }
+    var _b = _a === void 0 ? {} : _a, compare = _b.compare, operations = _b.operations;
+    var options = {
+        compare: compare || equals,
+        operations: Object.assign({}, operations || {})
+    };
+    var _c = createQueryOperations(query, options), selfOperations = _c[0], nestedOperations = _c[1];
+    var ops = [];
+    if (selfOperations.length) {
+        ops.push(new NestedOperation([], query, owneryQuery, options, selfOperations));
+    }
+    ops.push.apply(ops, nestedOperations);
+    if (ops.length === 1) {
+        return ops[0];
+    }
+    return new QueryOperation(query, owneryQuery, options, ops);
+};
+var createQueryOperations = function (query, options) {
+    var selfOperations = [];
+    var nestedOperations = [];
+    if (!isVanillaObject(query)) {
+        selfOperations.push(new EqualsOperation(query, query, options));
+        return [selfOperations, nestedOperations];
+    }
+    for (var key in query) {
+        if (key.charAt(0) === "$") {
+            var op = createNamedOperation(key, query[key], query, options);
+            // probably just a flag for another operation (like $options)
+            if (op != null) {
+                selfOperations.push(op);
+            }
+        }
+        else {
+            nestedOperations.push(createNestedOperation(key.split("."), query[key], query, options));
+        }
+    }
+    return [selfOperations, nestedOperations];
+};
+var createOperationTester = function (operation) { return function (item, key, owner) {
+    operation.reset();
+    operation.next(item, key, owner);
+    return operation.keep;
+}; };
+var createQueryTester = function (query, options) {
+    if (options === void 0) { options = {}; }
+    return createOperationTester(createQueryOperation(query, null, options));
+};
+
+var $Ne = /** @class */ (function (_super) {
+    __extends($Ne, _super);
+    function $Ne() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    $Ne.prototype.init = function () {
+        this._test = createTester(this.params, this.options.compare);
+    };
+    $Ne.prototype.reset = function () {
+        _super.prototype.reset.call(this);
+        this.keep = true;
+    };
+    $Ne.prototype.next = function (item) {
+        if (this._test(item)) {
+            this.done = true;
+            this.keep = false;
+        }
+    };
+    return $Ne;
+}(NamedBaseOperation));
+// https://docs.mongodb.com/manual/reference/operator/query/elemMatch/
+var $ElemMatch = /** @class */ (function (_super) {
+    __extends($ElemMatch, _super);
+    function $ElemMatch() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    $ElemMatch.prototype.init = function () {
+        this._queryOperation = createQueryOperation(this.params, this.owneryQuery, this.options);
+    };
+    $ElemMatch.prototype.reset = function () {
+        _super.prototype.reset.call(this);
+        this._queryOperation.reset();
+    };
+    $ElemMatch.prototype.next = function (item) {
+        if (isArray(item)) {
+            for (var i = 0, length_1 = item.length; i < length_1; i++) {
+                // reset query operation since item being tested needs to pass _all_ query
+                // operations for it to be a success
+                this._queryOperation.reset();
+                // check item
+                this._queryOperation.next(item[i], i, item);
+                this.keep = this.keep || this._queryOperation.keep;
+            }
+            this.done = true;
+        }
+        else {
+            this.done = false;
+            this.keep = false;
+        }
+    };
+    return $ElemMatch;
+}(NamedBaseOperation));
+var $Not = /** @class */ (function (_super) {
+    __extends($Not, _super);
+    function $Not() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    $Not.prototype.init = function () {
+        this._queryOperation = createQueryOperation(this.params, this.owneryQuery, this.options);
+    };
+    $Not.prototype.reset = function () {
+        this._queryOperation.reset();
+    };
+    $Not.prototype.next = function (item, key, owner) {
+        this._queryOperation.next(item, key, owner);
+        this.done = this._queryOperation.done;
+        this.keep = !this._queryOperation.keep;
+    };
+    return $Not;
+}(NamedBaseOperation));
+var $Size = /** @class */ (function (_super) {
+    __extends($Size, _super);
+    function $Size() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    $Size.prototype.init = function () { };
+    $Size.prototype.next = function (item) {
+        if (isArray(item) && item.length === this.params) {
+            this.done = true;
+            this.keep = true;
+        }
+        // if (parent && parent.length === this.params) {
+        //   this.done = true;
+        //   this.keep = true;
+        // }
+    };
+    return $Size;
+}(NamedBaseOperation));
+var $Or = /** @class */ (function (_super) {
+    __extends($Or, _super);
+    function $Or() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    $Or.prototype.init = function () {
+        var _this = this;
+        this._ops = this.params.map(function (op) {
+            return createQueryOperation(op, null, _this.options);
+        });
+    };
+    $Or.prototype.reset = function () {
+        this.done = false;
+        this.keep = false;
+        for (var i = 0, length_2 = this._ops.length; i < length_2; i++) {
+            this._ops[i].reset();
+        }
+    };
+    $Or.prototype.next = function (item, key, owner) {
+        var done = false;
+        var success = false;
+        for (var i = 0, length_3 = this._ops.length; i < length_3; i++) {
+            var op = this._ops[i];
+            op.next(item, key, owner);
+            if (op.keep) {
+                done = true;
+                success = op.keep;
+                break;
+            }
+        }
+        this.keep = success;
+        this.done = done;
+    };
+    return $Or;
+}(NamedBaseOperation));
+var $Nor = /** @class */ (function (_super) {
+    __extends($Nor, _super);
+    function $Nor() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    $Nor.prototype.next = function (item, key, owner) {
+        _super.prototype.next.call(this, item, key, owner);
+        this.keep = !this.keep;
+    };
+    return $Nor;
+}($Or));
+var $In = /** @class */ (function (_super) {
+    __extends($In, _super);
+    function $In() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    $In.prototype.init = function () {
+        var _this = this;
+        this._testers = this.params.map(function (value) {
+            if (containsOperation(value)) {
+                throw new Error("cannot nest $ under " + _this.constructor.name.toLowerCase());
+            }
+            return createTester(value, _this.options.compare);
+        });
+    };
+    $In.prototype.next = function (item, key, owner) {
+        var done = false;
+        var success = false;
+        for (var i = 0, length_4 = this._testers.length; i < length_4; i++) {
+            var test = this._testers[i];
+            if (test(item)) {
+                done = true;
+                success = true;
+                break;
+            }
+        }
+        this.keep = success;
+        this.done = done;
+    };
+    return $In;
+}(NamedBaseOperation));
+var $Nin = /** @class */ (function (_super) {
+    __extends($Nin, _super);
+    function $Nin() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    $Nin.prototype.next = function (item, key, owner) {
+        _super.prototype.next.call(this, item, key, owner);
+        this.keep = !this.keep;
+    };
+    return $Nin;
+}($In));
+var $Exists = /** @class */ (function (_super) {
+    __extends($Exists, _super);
+    function $Exists() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    $Exists.prototype.next = function (item, key, owner) {
+        if (owner.hasOwnProperty(key) === this.params) {
+            this.done = true;
+            this.keep = true;
+        }
+    };
+    return $Exists;
+}(NamedBaseOperation));
+var $And = /** @class */ (function (_super) {
+    __extends($And, _super);
+    function $And(params, owneryQuery, options, name) {
+        return _super.call(this, params, owneryQuery, options, params.map(function (query) { return createQueryOperation(query, owneryQuery, options); }), name) || this;
+    }
+    $And.prototype.next = function (item, key, owner) {
+        this.childrenNext(item, key, owner);
+    };
+    return $And;
+}(NamedGroupOperation));
+var $eq = function (params, owneryQuery, options) {
+    return new EqualsOperation(params, owneryQuery, options);
+};
+var $ne = function (params, owneryQuery, options, name) { return new $Ne(params, owneryQuery, options, name); };
+var $or = function (params, owneryQuery, options, name) { return new $Or(params, owneryQuery, options, name); };
+var $nor = function (params, owneryQuery, options, name) { return new $Nor(params, owneryQuery, options, name); };
+var $elemMatch = function (params, owneryQuery, options, name) { return new $ElemMatch(params, owneryQuery, options, name); };
+var $nin = function (params, owneryQuery, options, name) { return new $Nin(params, owneryQuery, options, name); };
+var $in = function (params, owneryQuery, options, name) { return new $In(params, owneryQuery, options, name); };
+var $lt = numericalOperation(function (params) { return function (b) { return b < params; }; });
+var $lte = numericalOperation(function (params) { return function (b) { return b <= params; }; });
+var $gt = numericalOperation(function (params) { return function (b) { return b > params; }; });
+var $gte = numericalOperation(function (params) { return function (b) { return b >= params; }; });
+var $mod = function (_a, owneryQuery, options) {
+    var mod = _a[0], equalsValue = _a[1];
+    return new EqualsOperation(function (b) { return comparable(b) % mod === equalsValue; }, owneryQuery, options);
+};
+var $exists = function (params, owneryQuery, options, name) { return new $Exists(params, owneryQuery, options, name); };
+var $regex = function (pattern, owneryQuery, options) {
+    return new EqualsOperation(new RegExp(pattern, owneryQuery.$options), owneryQuery, options);
+};
+var $not = function (params, owneryQuery, options, name) { return new $Not(params, owneryQuery, options, name); };
+var typeAliases = {
+    number: function (v) { return typeof v === "number"; },
+    string: function (v) { return typeof v === "string"; },
+    bool: function (v) { return typeof v === "boolean"; },
+    array: function (v) { return Array.isArray(v); },
+    null: function (v) { return v === null; },
+    timestamp: function (v) { return v instanceof Date; }
+};
+var $type = function (clazz, owneryQuery, options) {
+    return new EqualsOperation(function (b) {
+        if (typeof clazz === "string") {
+            if (!typeAliases[clazz]) {
+                throw new Error("Type alias does not exist");
+            }
+            return typeAliases[clazz](b);
+        }
+        return b != null ? b instanceof clazz || b.constructor === clazz : false;
+    }, owneryQuery, options);
+};
+var $and = function (params, ownerQuery, options, name) { return new $And(params, ownerQuery, options, name); };
+var $all = $and;
+var $size = function (params, ownerQuery, options) { return new $Size(params, ownerQuery, options, "$size"); };
+var $options = function () { return null; };
+var $where = function (params, ownerQuery, options) {
+    var test;
+    if (isFunction(params)) {
+        test = params;
+    }
+    else if (!process.env.CSP_ENABLED) {
+        test = new Function("obj", "return " + params);
+    }
+    else {
+        throw new Error("In CSP mode, sift does not support strings in \"$where\" condition");
+    }
+    return new EqualsOperation(function (b) { return test.bind(b)(b); }, ownerQuery, options);
+};
+
+var defaultOperations = /*#__PURE__*/Object.freeze({
+    __proto__: null,
+    $Size: $Size,
+    $eq: $eq,
+    $ne: $ne,
+    $or: $or,
+    $nor: $nor,
+    $elemMatch: $elemMatch,
+    $nin: $nin,
+    $in: $in,
+    $lt: $lt,
+    $lte: $lte,
+    $gt: $gt,
+    $gte: $gte,
+    $mod: $mod,
+    $exists: $exists,
+    $regex: $regex,
+    $not: $not,
+    $type: $type,
+    $and: $and,
+    $all: $all,
+    $size: $size,
+    $options: $options,
+    $where: $where
+});
+
+var createDefaultQueryOperation = function (query, ownerQuery, _a) {
+    var _b = _a === void 0 ? {} : _a, compare = _b.compare, operations = _b.operations;
+    return createQueryOperation(query, ownerQuery, {
+        compare: compare,
+        operations: Object.assign({}, defaultOperations, operations || {})
+    });
+};
+var createDefaultQueryTester = function (query, options) {
+    if (options === void 0) { options = {}; }
+    var op = createDefaultQueryOperation(query, null, options);
+    return createOperationTester(op);
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (createDefaultQueryTester);
+
+//# sourceMappingURL=index.js.map
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../process/browser.js */ "./node_modules/process/browser.js")))
 
 /***/ }),
 
@@ -56643,8 +57064,8 @@ var debug = "development" !== 'production';
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/allanbzr/midata/banking-system/resources/adminapp/js/app.js */"./resources/adminapp/js/app.js");
-module.exports = __webpack_require__(/*! /home/allanbzr/midata/banking-system/resources/adminapp/sass/app.scss */"./resources/adminapp/sass/app.scss");
+__webpack_require__(/*! /home/allanbzr/midata/banking-system-app/resources/adminapp/js/app.js */"./resources/adminapp/js/app.js");
+module.exports = __webpack_require__(/*! /home/allanbzr/midata/banking-system-app/resources/adminapp/sass/app.scss */"./resources/adminapp/sass/app.scss");
 
 
 /***/ })
