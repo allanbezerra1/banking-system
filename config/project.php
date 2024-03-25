@@ -12,14 +12,14 @@ return [
             'title'      => 'English',
             'short_code' => 'en',
         ],
-        [
-            'title'      => 'Spanish',
-            'short_code' => 'es',
-        ],
-        [
-            'title'      => 'Brazilian Portuguese',
-            'short_code' => 'br',
-        ],
+//        [
+//            'title'      => 'Spanish',
+//            'short_code' => 'es',
+//        ],
+//        [
+//            'title'      => 'Brazilian Portuguese',
+//            'short_code' => 'br',
+//        ],
     ],
     'registered_user_role' => 'Customer',
 ];
