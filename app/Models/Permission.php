@@ -12,29 +12,37 @@ class Permission extends Model
 {
     use HasAdvancedFilter, SoftDeletes, HasFactory;
 
+    public const TABLE_NAME = 'permissions';
+
+    public const ID = 'id';
+    public const TITLE = 'title';
+    public const CREATED_AT = 'created_at';
+    public const UPDATED_AT = 'updated';
+    public const DELETED_AT = 'deleted_at';
+
     public $table = 'permissions';
 
     protected array $orderable = [
-        'id',
-        'title',
+        self::ID,
+        self::TITLE,
     ];
 
     protected array $filterable = [
-        'id',
-        'title',
+        self::ID,
+        self::TITLE,
     ];
 
     protected array $dates = [
-        'created_at',
-        'updated_at',
-        'deleted_at',
+        self::CREATED_AT,
+        self::UPDATED_AT,
+        self::DELETED_AT,
     ];
 
     protected $fillable = [
-        'title',
-        'created_at',
-        'updated_at',
-        'deleted_at',
+        self::TITLE,
+        self::CREATED_AT,
+        self::UPDATED_AT,
+        self::DELETED_AT,
     ];
 
     protected function serializeDate(DateTimeInterface $date): string

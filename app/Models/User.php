@@ -17,44 +17,60 @@ class User extends Authenticatable
 {
     use HasAdvancedFilter, SoftDeletes, Notifiable, HasFactory;
 
-    public $table = 'users';
+    public const TABLE_NAME = 'users';
+
+    public const ID = 'id';
+    public const NAME = 'name';
+    public const EMAIL = 'email';
+    public const EMAIL_VERIFIED_AT = 'email_verified_at';
+    public const PASSWORD = 'password';
+    public const REMEMBER_TOKEN = 'remember_token';
+    public const CREATED_AT = 'created_at';
+    public const UPDATED_AT = 'updated';
+    public const DELETED_AT = 'deleted_at';
+
+    # Others constants
+    public const ROLES_TITLE = 'roles.title';
+
+    public $table = self::TABLE_NAME;
 
     protected $hidden = [
-        'remember_token',
-        'password',
+        self::PASSWORD,
+        self::REMEMBER_TOKEN,
     ];
 
     protected array $orderable = [
-        'id',
-        'name',
-        'email',
-        'email_verified_at',
+        self::ID,
+        self::NAME,
+        self::EMAIL,
+        self::EMAIL_VERIFIED_AT,
+        self::ROLES_TITLE,
     ];
 
     protected array $dates = [
-        'email_verified_at',
-        'created_at',
-        'updated_at',
-        'deleted_at',
+        self::EMAIL_VERIFIED_AT,
+        self::CREATED_AT,
+        self::UPDATED_AT,
+        self::DELETED_AT,
     ];
 
     protected array $filterable = [
-        'id',
-        'name',
-        'email',
-        'email_verified_at',
-        'roles.title',
+        self::ID,
+        self::NAME,
+        self::EMAIL,
+        self::EMAIL_VERIFIED_AT,
+        self::ROLES_TITLE,
     ];
 
     protected $fillable = [
-        'name',
-        'email',
-        'email_verified_at',
-        'password',
-        'remember_token',
-        'created_at',
-        'updated_at',
-        'deleted_at',
+        self::NAME,
+        self::EMAIL,
+        self::EMAIL_VERIFIED_AT,
+        self::PASSWORD,
+        self::REMEMBER_TOKEN,
+        self::CREATED_AT,
+        self::UPDATED_AT,
+        self::DELETED_AT,
     ];
 
     protected function serializeDate(DateTimeInterface $date): string
@@ -62,9 +78,9 @@ class User extends Authenticatable
         return $date->format('Y-m-d H:i:s');
     }
 
-    public function getIsAdminAttribute()
+    public function getIsAdminAttribute(): bool
     {
-        return $this->roles()->where('title', 'Admin')->exists();
+        return $this->roles()->where(Role::TITLE, 'admin')->exists();
     }
 
     public function getEmailVerifiedAtAttribute($value): ?string

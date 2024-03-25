@@ -18,52 +18,69 @@ class Income extends Model implements HasMedia
 {
     use HasAdvancedFilter, SoftDeletes, InteractsWithMedia, HasFactory;
 
-    public $table = 'incomes';
+    public const TABLE_NAME = 'incomes';
+
+    public const ID = 'id';
+    public const DOCUMENT = 'document';
+    public const INCOME_CATEGORY_ID = 'income_category_id';
+    public const USER_ID = 'user_id';
+    public const ENTRY_DATE = 'entry_date';
+    public const AMOUNT = 'amount';
+    public const DESCRIPTION = 'description';
+    public const APPROVED = 'approved';
+    public const CREATED_AT = 'created_at';
+    public const UPDATED_AT = 'updated';
+    public const DELETED_AT = 'deleted_at';
+
+    # Others constants
+    public const INCOME_CATEGORY_NAME = 'income_category.name';
+    public const USER_NAME = 'user.name';
+
+    public $table = self::TABLE_NAME;
 
     protected $appends = [
-        'document',
+        self::DOCUMENT,
     ];
 
     protected $casts = [
-        'approved' => 'boolean',
+        self::APPROVED => 'boolean',
     ];
 
     protected array $dates = [
-        'entry_date',
-        'created_at',
-        'updated_at',
-        'deleted_at',
+        self::ENTRY_DATE,
+        self::CREATED_AT,
+        self::UPDATED_AT,
+        self::DELETED_AT,
     ];
 
     protected array $filterable = [
-        'id',
-        'income_category.name',
-        'user.name',
-        'entry_date',
-        'amount',
-        'description',
+        self::ID,
+        self::ENTRY_DATE,
+        self::AMOUNT,
+        self::DESCRIPTION,
+        self::APPROVED,
+        self::INCOME_CATEGORY_NAME,
+        self::USER_NAME,
     ];
 
     protected array $orderable = [
-        'id',
-        'income_category.name',
-        'user.name',
-        'entry_date',
-        'amount',
-        'description',
-        'approved',
+        self::ID,
+        self::ENTRY_DATE,
+        self::AMOUNT,
+        self::DESCRIPTION,
+        self::APPROVED,
     ];
 
     protected $fillable = [
-        'income_category_id',
-        'user_id',
-        'entry_date',
-        'amount',
-        'description',
-        'approved',
-        'created_at',
-        'updated_at',
-        'deleted_at',
+        self::INCOME_CATEGORY_ID,
+        self::USER_ID,
+        self::ENTRY_DATE,
+        self::AMOUNT,
+        self::DESCRIPTION,
+        self::APPROVED,
+        self::CREATED_AT,
+        self::UPDATED_AT,
+        self::DELETED_AT,
     ];
 
     protected function serializeDate(DateTimeInterface $date): string

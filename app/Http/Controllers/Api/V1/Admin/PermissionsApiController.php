@@ -7,56 +7,60 @@ use App\Http\Requests\StorePermissionRequest;
 use App\Http\Requests\UpdatePermissionRequest;
 use App\Http\Resources\Admin\PermissionResource;
 use App\Models\Permission;
-use Gate;
+use Illuminate\Contracts\Routing\ResponseFactory;
+use Illuminate\Foundation\Application;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Gate;
+use Symfony\Component\HttpFoundation\Response as ResponseAlias;
 
 class PermissionsApiController extends Controller
 {
-    public function index()
+    public function index(): PermissionResource
     {
-        abort_if(Gate::denies('permission_access'), Response::HTTP_FORBIDDEN, '403 Forbidden');
+        abort_if(Gate::denies('permission_access'), ResponseAlias::HTTP_FORBIDDEN, '403 Forbidden');
 
         return new PermissionResource(Permission::advancedFilter());
     }
 
-    public function store(StorePermissionRequest $request)
+    public function store(StorePermissionRequest $request): JsonResponse
     {
         $permission = Permission::create($request->validated());
 
         return (new PermissionResource($permission))
             ->response()
-            ->setStatusCode(Response::HTTP_CREATED);
+            ->setStatusCode(ResponseAlias::HTTP_CREATED);
     }
 
-    public function create()
+    public function create(): Application|Response|ResponseFactory
     {
-        abort_if(Gate::denies('permission_create'), Response::HTTP_FORBIDDEN, '403 Forbidden');
+        abort_if(Gate::denies('permission_create'), ResponseAlias::HTTP_FORBIDDEN, '403 Forbidden');
 
         return response([
             'meta' => [],
         ]);
     }
 
-    public function show(Permission $permission)
+    public function show(Permission $permission): PermissionResource
     {
-        abort_if(Gate::denies('permission_show'), Response::HTTP_FORBIDDEN, '403 Forbidden');
+        abort_if(Gate::denies('permission_show'), ResponseAlias::HTTP_FORBIDDEN, '403 Forbidden');
 
         return new PermissionResource($permission);
     }
 
-    public function update(UpdatePermissionRequest $request, Permission $permission)
+    public function update(UpdatePermissionRequest $request, Permission $permission): JsonResponse
     {
         $permission->update($request->validated());
 
         return (new PermissionResource($permission))
             ->response()
-            ->setStatusCode(Response::HTTP_ACCEPTED);
+            ->setStatusCode(ResponseAlias::HTTP_ACCEPTED);
     }
 
-    public function edit(Permission $permission)
+    public function edit(Permission $permission): Application|Response|ResponseFactory
     {
-        abort_if(Gate::denies('permission_edit'), Response::HTTP_FORBIDDEN, '403 Forbidden');
+        abort_if(Gate::denies('permission_edit'), ResponseAlias::HTTP_FORBIDDEN, '403 Forbidden');
 
         return response([
             'data' => new PermissionResource($permission),
@@ -64,12 +68,12 @@ class PermissionsApiController extends Controller
         ]);
     }
 
-    public function destroy(Permission $permission)
+    public function destroy(Permission $permission): Application|Response|ResponseFactory
     {
-        abort_if(Gate::denies('permission_delete'), Response::HTTP_FORBIDDEN, '403 Forbidden');
+        abort_if(Gate::denies('permission_delete'), ResponseAlias::HTTP_FORBIDDEN, '403 Forbidden');
 
         $permission->delete();
 
-        return response(null, Response::HTTP_NO_CONTENT);
+        return response(null, ResponseAlias::HTTP_NO_CONTENT);
     }
 }

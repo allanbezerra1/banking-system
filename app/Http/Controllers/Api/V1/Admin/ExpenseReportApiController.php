@@ -6,14 +6,16 @@ use App\Http\Controllers\Controller;
 use App\Models\Expense;
 use App\Models\Income;
 use Carbon\Carbon;
-use Gate;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Gate;
+use Symfony\Component\HttpFoundation\Response as ResponseAlias;
 
 class ExpenseReportApiController extends Controller
 {
-    public function index()
+    public function index(): JsonResponse
     {
-        abort_if(Gate::denies('expense_report_access'), Response::HTTP_FORBIDDEN, '403 Forbidden');
+        abort_if(Gate::denies('expense_report_access'), ResponseAlias::HTTP_FORBIDDEN, '403 Forbidden');
 
         $validatedData = request()->validate([
             'year'  => 'required|in:' . implode(',', range(now()->year, 1900)),

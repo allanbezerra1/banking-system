@@ -34,7 +34,7 @@ class UsersApiController extends Controller
             ->setStatusCode(ResponseAlias::HTTP_CREATED);
     }
 
-    public function create()
+    public function create(): Application|Response|ResponseFactory
     {
         abort_if(Gate::denies('user_create'), ResponseAlias::HTTP_FORBIDDEN, '403 Forbidden');
 
@@ -45,14 +45,14 @@ class UsersApiController extends Controller
         ]);
     }
 
-    public function show(User $user)
+    public function show(User $user): UserResource
     {
         abort_if(Gate::denies('user_show'), ResponseAlias::HTTP_FORBIDDEN, '403 Forbidden');
 
         return new UserResource($user->load(['roles']));
     }
 
-    public function update(UpdateUserRequest $request, User $user)
+    public function update(UpdateUserRequest $request, User $user): JsonResponse
     {
         $user->update($request->validated());
         $user->roles()->sync($request->input('roles.*.id', []));

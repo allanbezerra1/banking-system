@@ -14,42 +14,56 @@ class Expense extends Model
 {
     use HasAdvancedFilter, SoftDeletes, HasFactory;
 
-    public $table = 'expenses';
+    public const TABLE_NAME = 'expenses';
+
+    public const ID = 'id';
+    public const EXPENSE_CATEGORY_ID = 'expense_category_id';
+    public const USER_ID = 'user_id';
+    public const ENTRY_DATE = 'entry_date';
+    public const AMOUNT = 'amount';
+    public const DESCRIPTION = 'description';
+    public const CREATED_AT = 'created_at';
+    public const UPDATED_AT = 'updated';
+    public const DELETED_AT = 'deleted_at';
+
+    # Others constants
+    public const EXPENSE_CATEGORY_NAME = 'expense_category.name';
+    public const USER_NAME = 'user.name';
+
+    public $table = self::TABLE_NAME;
 
     protected array $dates = [
-        'entry_date',
-        'created_at',
-        'updated_at',
-        'deleted_at',
+        self::ENTRY_DATE,
+        self::CREATED_AT,
+        self::UPDATED_AT,
+        self::DELETED_AT,
     ];
 
     protected array $orderable = [
-        'id',
-        'expense_category.name',
-        'user.name',
-        'entry_date',
-        'amount',
-        'description',
+        self::ID,
+        self::ENTRY_DATE,
+        self::AMOUNT,
+        self::DESCRIPTION,
     ];
 
     protected array $filterable = [
-        'id',
-        'expense_category.name',
-        'user.name',
-        'entry_date',
-        'amount',
-        'description',
+        self::ID,
+        self::ENTRY_DATE,
+        self::AMOUNT,
+        self::DESCRIPTION,
+        self::EXPENSE_CATEGORY_NAME,
+        self::USER_NAME,
     ];
 
     protected $fillable = [
-        'expense_category_id',
-        'user_id',
-        'entry_date',
-        'amount',
-        'description',
-        'created_at',
-        'updated_at',
-        'deleted_at',
+        self::EXPENSE_CATEGORY_ID,
+        self::USER_ID,
+        self::ENTRY_DATE,
+        self::AMOUNT,
+        self::DESCRIPTION,
+        self::CREATED_AT,
+        self::UPDATED_AT,
+        self::DELETED_AT,
     ];
 
     protected function serializeDate(DateTimeInterface $date): string
