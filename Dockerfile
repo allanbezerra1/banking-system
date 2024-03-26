@@ -1,5 +1,8 @@
 # Use the official PHP image with PHP 8.3
-FROM dunglas/frankenphp as base
+FROM php:8.3-fpm as base
+
+# Use the official Node.js image to build assets
+FROM node:20 as node
 
 # Install Composer in a separate stage to leverage Docker cache
 FROM composer:latest as composer
@@ -63,6 +66,15 @@ RUN php artisan octane:install --server=frankenphp \
     # Correct permissions for Laravel directories
     && chown -R www-data:www-data /app/storage /app/bootstrap/cache \
     && chmod -R 775 /app/storage /app/bootstrap/cache
+
+# Copy the application's package.json and package-lock.json to install dependencies
+COPY package*.json /app/
+
+# Install dependencies with NPM
+RUN npm install
+
+# Build assets
+RUN npm run dev
 
 # Expose Octane port
 EXPOSE 8000
