@@ -13,9 +13,6 @@ FROM base
 # Install Composer globally
 COPY --from=composer /usr/bin/composer /usr/bin/composer
 
-# Copy the Composer dependencies from the Composer image
-COPY --from=composer /app/vendor /app/vendor
-
 # Copy the Node.js dependencies from the Node.js image
 COPY --from=node /app/node_modules /app/node_modules
 
