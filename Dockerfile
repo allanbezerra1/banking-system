@@ -55,9 +55,6 @@ RUN composer install \
 
 RUN composer require laravel/octane
 
-# Generate a new application key
-RUN php artisan key:generate
-
 # Optimize the application
 RUN php artisan optimize:clear
 RUN php artisan optimize
