@@ -1,80 +1,37 @@
-## Use the official PHP image with PHP 8.3
-#FROM php:8.3-fpm as base
-#
-## Use the official Node.js image to build assets
-#FROM node:20 as node
-#
-#ENV HOST 0.0.0.0
-#
-## Install Composer in a separate stage to leverage Docker cache
-#FROM composer:latest as composer
-#
-## Start again from base image to reduce final image size
-#FROM base
-#
-## Install Composer globally
-#COPY --from=composer /usr/bin/composer /usr/bin/composer
-#
-## Copy the application's package.json and package-lock.json to install dependencies
-#COPY package*.json /app/
-#
-## Install system dependencies and PHP extensions needed by Laravel
-#RUN apt-get update && apt-get install -y \
-#    libpng-dev \
-#    libjpeg-dev \
-#    libfreetype6-dev \
-#    libzip-dev \
-#    zip \
-#    unzip \
-#    git \
-#    curl \
-#    exif \
-#    nodejs \
-#    npm \
-#    apt-utils \
-#    # Clean up the apt cache to reduce image size
-#    && apt-get clean && rm -rf /var/lib/apt/lists/* \
-#    # Configure and install PHP extensions
-#    && docker-php-ext-configure gd --with-freetype --with-jpeg \
-#    && docker-php-ext-install gd pdo_mysql zip pcntl \
-#    # Configure pcntl for better process control
-#    && docker-php-ext-configure pcntl --enable-pcntl \
-#    && docker-php-ext-install pcntl \
-#    # Configure exif for better image handling
-#    && docker-php-ext-configure exif --enable-exif \
-#    && docker-php-ext-install exif
-#
-## Copy the application's composer.json and composer.lock to install dependencies
-#COPY composer.* /app/
-#
-## Copiar projeto
-#COPY --chown=www-data:www-data . /app
-#
-#WORKDIR /app
-#
-## Install dependencies with Composer
-#RUN composer install \
-#    --no-dev \
-#    --optimize-autoloader \
-#    --no-interaction \
-#    --prefer-dist \
-#    --no-scripts
-#
-## Optimize the application
-#RUN php artisan optimize:clear
-#RUN php artisan optimize
-#    # Correct permissions for Laravel directories
-#RUN chown -R www-data:www-data /app/storage /app/bootstrap/cache \
-#    && chmod -R 775 /app/storage /app/bootstrap/cache
-#
-## Install dependencies with NPM
-#RUN npm install
-#
-## Build assets
-#RUN npm run dev
-#
-## Expose Octane port
-#EXPOSE 80
-#
-## Start Octane with FrankenPHP
-#CMD ["php", "artisan", "octane:start", "--server=frankenphp", "--host=*", "--port=80"]
+FROM php:8.3-fpm
+
+# Instalar dependências do Ubuntu Linux
+RUN apt update && \
+    apt install -y nginx libzip-dev $PHPIZE_DEPS
+
+# Instalar pacotes necessarios para o MongoDB
+RUN apt-get install -y libcurl4-openssl-dev pkg-config libssl-dev
+
+# Instalar extensões do PHP
+RUN docker-php-ext-install opcache pcntl pdo_mysql zip
+RUN pecl update-channels && \
+    pecl install ds igbinary && \
+    docker-php-ext-enable ds igbinary
+
+# Copiar configurações
+COPY .docker/production/nginx/default.conf /etc/nginx/sites-available/default
+COPY .docker/production/php/php.ini /usr/local/etc/php/conf.d/php.ini
+COPY .docker/production/php/opcache.ini /usr/local/etc/php/conf.d/opcache.ini
+COPY .docker/production/php/php-fpm.conf /usr/local/etc/php/conf.d/php-fpm.conf
+
+# Instalar Composer
+COPY --from=composer /usr/bin/composer /usr/bin/composer
+
+# Copiar projeto
+COPY --chown=www-data:www-data . /app
+
+WORKDIR /app
+
+# Instalar dependências do projeto
+RUN composer install --optimize-autoloader --no-dev --ignore-platform-reqs
+
+# Determinar entrypoint
+COPY .docker/production/entrypoint.sh /entrypoint.sh
+ENTRYPOINT sh /entrypoint.sh
+
+EXPOSE 80 9000
