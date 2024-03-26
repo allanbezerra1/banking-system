@@ -17,10 +17,10 @@ services:
             DB_DATABASE: banking-system
             DB_USERNAME: laravel
             DB_PASSWORD: secret
-            REDIS_HOST: banking-redis
+#            REDIS_HOST: banking-redis
         depends_on:
             - banking-db
-            - banking-redis
+#            - banking-redis
         networks:
             - banking-network
 
@@ -39,15 +39,15 @@ services:
         networks:
             - banking-network
 
-    banking-redis:
-        image: redis:latest
-        container_name: banking-redis
-        ports:
-            - "6379:6379"
-        volumes:
-            - banking-redis-data:/data
-        networks:
-            - banking-network
+#    banking-redis:
+#        image: redis:latest
+#        container_name: banking-redis
+#        ports:
+#            - "6379:6379"
+#        volumes:
+#            - banking-redis-data:/data
+#        networks:
+#            - banking-network
 
 networks:
     banking-network:
@@ -56,5 +56,5 @@ networks:
 volumes:
     banking-db-data:
         driver: local
-    banking-redis-data:
-        driver: local
+#    banking-redis-data:
+#        driver: local

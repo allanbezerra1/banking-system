@@ -13,9 +13,6 @@ FROM base
 # Install Composer globally
 COPY --from=composer /usr/bin/composer /usr/bin/composer
 
-# Copy the Node.js dependencies from the Node.js image
-COPY --from=node /app/node_modules /app/node_modules
-
 # Copy the application's package.json and package-lock.json to install dependencies
 COPY package*.json /app/
 
@@ -30,6 +27,8 @@ RUN apt-get update && apt-get install -y \
     git \
     curl \
     exif \
+    nodejs \
+    npm \
     apt-utils \
     # Clean up the apt cache to reduce image size
     && apt-get clean && rm -rf /var/lib/apt/lists/* \
