@@ -1,5 +1,5 @@
 [build]
   command = "docker compose up --build"
-  publish="dist"
-  base = "client"
-  # The base directory should be the path to the nested Vue project
+  base = "docker-compose.yml"
+    depends_on = ["db"]
+
