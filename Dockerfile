@@ -19,6 +19,9 @@ COPY .docker/production/php/php.ini /usr/local/etc/php/conf.d/php.ini
 COPY .docker/production/php/opcache.ini /usr/local/etc/php/conf.d/opcache.ini
 COPY .docker/production/php/php-fpm.conf /usr/local/etc/php/conf.d/php-fpm.conf
 
+# Copiar env
+COPY .env.example .env
+
 # Instalar Composer
 COPY --from=composer /usr/bin/composer /usr/bin/composer
 
