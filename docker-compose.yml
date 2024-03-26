@@ -1,16 +1,15 @@
 version: '3.8'
 services:
     banking-api:
-        build:
-            context: .
-            dockerfile: Dockerfile
         image: banking-api:latest
         container_name: banking-api
         ports:
             - "8000:8000"
-        volumes:
-            - .:/var/www
-            - ./public:/var/www/html
+        build:
+            context: .
+            dockerfile: .docker/local/Dockerfile
+        restart: unless-stopped
+        working_dir: /app
         environment:
             DB_HOST: banking-db
             DB_PORT: 3306

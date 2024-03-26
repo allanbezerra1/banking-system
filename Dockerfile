@@ -60,15 +60,11 @@ RUN composer install \
     --prefer-dist \
     --no-scripts
 
-RUN composer require laravel/octane
-
 # Optimize the application
 RUN php artisan optimize:clear
 RUN php artisan optimize
     # Correct permissions for Laravel directories
-RUN php artisan octane:install --server=frankenphp \
-    # Correct permissions for Laravel directories
-    && chown -R www-data:www-data /app/storage /app/bootstrap/cache \
+RUN chown -R www-data:www-data /app/storage /app/bootstrap/cache \
     && chmod -R 775 /app/storage /app/bootstrap/cache
 
 # Install dependencies with NPM
