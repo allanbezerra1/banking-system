@@ -14,14 +14,6 @@ php artisan migrate --seed --force
 chmod 777 -R storage/
 chmod 777 -R bootstrap/cache/
 
-if [ "${CONTAINER_TYPE}" = "app" ]; then
-    nginx
-    php-fpm
-elif [ "${CONTAINER_TYPE}" = "worker" ]; then
-    php artisan horizon
-elif [ "${CONTAINER_TYPE}" = "schedule" ]; then
-    php artisan schedule:work
-else
-    echo "O tipo do contêiner não foi especificado"
-    exit 1
-fi
+nginx
+php-fpm
+
