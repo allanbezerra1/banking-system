@@ -78,7 +78,7 @@ RUN npm install
 RUN npm run dev
 
 # Expose Octane port
-EXPOSE 8080
+EXPOSE 80
 
 # Start Octane with FrankenPHP
-CMD ["php", "artisan", "octane:start", "--server=frankenphp", "--host=*", "--port=8080"]
+CMD ["php", "artisan", "octane:start", "--server=frankenphp", "--host=*", "--port=80"]
