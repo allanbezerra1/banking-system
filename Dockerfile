@@ -4,6 +4,8 @@ FROM php:8.3-fpm as base
 # Use the official Node.js image to build assets
 FROM node:20 as node
 
+ENV HOST 0.0.0.0
+
 # Install Composer in a separate stage to leverage Docker cache
 FROM composer:latest as composer
 
@@ -76,7 +78,7 @@ RUN npm install
 RUN npm run dev
 
 # Expose Octane port
-EXPOSE 8000
+EXPOSE 8080
 
 # Start Octane with FrankenPHP
-CMD ["php", "artisan", "octane:start", "--server=frankenphp"]
+CMD ["php", "artisan", "octane:start", "--server=frankenphp", "--host=*", "--port=8080"]
