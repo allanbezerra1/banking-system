@@ -13,6 +13,15 @@ FROM base
 # Install Composer globally
 COPY --from=composer /usr/bin/composer /usr/bin/composer
 
+# Copy the Composer dependencies from the Composer image
+COPY --from=composer /app/vendor /app/vendor
+
+# Copy the Node.js dependencies from the Node.js image
+COPY --from=node /app/node_modules /app/node_modules
+
+# Copy the application's package.json and package-lock.json to install dependencies
+COPY package*.json /app/
+
 # Install system dependencies and PHP extensions needed by Laravel
 RUN apt-get update && apt-get install -y \
     libpng-dev \
@@ -63,9 +72,6 @@ RUN php artisan octane:install --server=frankenphp \
     # Correct permissions for Laravel directories
     && chown -R www-data:www-data /app/storage /app/bootstrap/cache \
     && chmod -R 775 /app/storage /app/bootstrap/cache
-
-# Copy the application's package.json and package-lock.json to install dependencies
-COPY package*.json /app/
 
 # Install dependencies with NPM
 RUN npm install
